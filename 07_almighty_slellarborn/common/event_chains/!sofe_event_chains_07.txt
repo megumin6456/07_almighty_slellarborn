@@ -1,0 +1,18 @@
+origin_crisis_chain = {
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	picture = GFX_evt_origin_empire
+	counter = {
+		nanited_worlds = {
+		}
+		active_original_worlds = {
+		}
+		origin_kills_us = {
+		}
+		origin_kills_others = {
+		}
+		origin_victims = {
+		}
+		almighty_sofe_arkship_lives = {
+		}
+	}
+}

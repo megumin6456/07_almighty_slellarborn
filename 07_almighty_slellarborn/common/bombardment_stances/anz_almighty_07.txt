@@ -1,0 +1,28 @@
+hypernova = {
+	trigger = {
+		owner = { is_country_type = sbtg_stellarborne_empire }
+		has_global_flag = almighty_sofe
+	}
+	default = no
+	
+	stop_when_armies_dead = no
+	abduct_pops = no
+
+	planet_damage = 60
+	army_damage = 9999
+	
+	kill_pop_chance = {
+		base = 40
+	}
+	min_pops_to_kill_pop = 0
+	
+	# root = fleet
+	# from = planet
+	ai_weight = {
+		weight = 10000
+		modifier = {
+			factor = 10000
+			owner = { is_country_type = sbtg_stellarborne_empire }
+		}
+	}
+}

@@ -1,0 +1,1065 @@
+# Overwrites to disable activation in almighty
+create_origin_homeworld_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 8
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe		
+				has_global_flag = almighty_sofe		
+			}
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+}
+
+create_origin_garrison_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		create_ship = {
+			name = random
+			design = "NAME_PROGENITOR_AVATAR"
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}
+		while = {
+			count = 8
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 6
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe
+				has_global_flag = almighty_sofe			
+			}
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+	}
+}
+
+create_origin_large_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 6
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 12
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe				
+			}
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 3
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}
+	}
+}
+
+create_origin_small_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		create_ship = {
+			name = random
+			design = "NAME_PROGENITOR_AVATAR"
+		}
+		while = {
+			count = 12
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+		while = {
+			count = 6
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 8
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe				
+			}
+		}
+		create_ship = {
+			name = random
+			design = "NAME_PROGENITOR_AVATAR"
+		}
+		while = {
+			count = 3
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+		while = {
+			count = 3
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+	}
+}
+
+create_origin_outsider_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		create_ship = {
+			name = random
+			design = "NAME_PROGENITOR_AVATAR"
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 6
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}	
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe
+				has_global_flag = almighty_sofe	
+			}
+		}
+		while = {
+			count = 20
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 10
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}		
+	}
+}
+
+create_origin_scout_ships = {
+	if = {
+		limit = { 
+			has_global_flag = hard_sofe
+		}
+		while = {
+			count = 4
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}	
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_TITAN"
+			}
+		}	
+	}
+	if = {
+		limit = { 
+			has_global_flag = terrible_sofe
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DREADNOUGHT"
+			}
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_ORIGIN_DEFENDER"
+			}
+		}		
+	}
+	if = {
+		limit = {
+			has_global_flag = almighty_sofe
+		}
+	}
+	else_if = {
+		limit = { 
+			NOR = {
+				has_global_flag = hard_sofe
+				has_global_flag = terrible_sofe		
+				has_global_flag = almighty_sofe
+			}
+		}
+		while = {
+			count = 1
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_BATTLECRUISER"
+			}
+		}
+		while = {
+			count = 2
+			create_ship = {
+				name = random
+				design = "NAME_PROGENITOR_ESCORT"
+			}
+		}		
+	}
+}
+
+# HERCS
+create_almighty_hercs = {
+	if = {
+		limit = { has_global_flag = almighty_sofe }
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 0
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 45
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 90
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 135
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 180
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 225
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						set_ship_flag = immortal_herc
+						set_disable_at_health = 0.1
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 270
+				}
+			}
+		}
+		create_fleet = {
+			name = "NAME_ALMIGHTY_HERCS"
+			settings = {
+				spawn_debris = no 
+				is_boss = yes
+				garrison = yes
+				can_upgrade = no
+			}
+			effect = {
+				set_owner = event_target:sofe_crisis_country
+				acemod_set_fleet_piloted_exclusion_on = yes
+				create_ship = {
+					name = "NAME_ALMIGHTY_HERCS"
+					design = "NAME_ALMIGHTY_HERCS"
+					effect = {
+						set_ship_flag = immortal_herc
+						set_disable_at_health = 0.1
+						add_modifier = {
+							modifier = immortal_herc_speed
+						}
+					}
+				}
+				set_location = {
+					target = event_target:star_heart
+					distance = 200
+					angle = 315
+				}
+			}
+		}
+	}
+}
+
+# Borders (Solar system scope)
+create_almighty_starbases = {
+	if = {
+		limit = {
+			solar_system = {
+				NOR = {
+					any_ship_in_system = {
+						owner = { is_hostile = event_target:sofe_crisis_country }
+					}
+					any_system_planet = {
+						NOR = {
+							merg_is_void_system = yes
+							merg_is_empty_space = yes
+						}
+						exists = owner
+						owner = {
+							is_hostile = event_target:sofe_crisis_country
+						}
+					}
+				}
+			}
+		}
+		create_almighty_citadel = yes
+	}
+}
+
+# Citidels
+create_almighty_citadel = {
+	create_starbase = {
+		size = "origin_super_citadel"
+		owner = event_target:sofe_crisis_country
+	}
+}
+
+# Varient
+create_almighty_citadel_home = {
+	create_starbase = {
+		size = "origin_super_citadel"
+		owner = event_target:sofe_crisis_country
+
+		effect = {
+			while = {
+				count = 10
+				create_almighty_tower = yes
+			}
+		}
+	}
+}
+
+create_almighty_tower = {
+	create_ship = {
+		name = random
+		design = "NAME_ALMIGHTY_TOWER"	
+	}	
+}
+
+# Scouts (Escort)
+create_almighty_scouts = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_SCOUTS"
+		settings = { 
+			can_upgrade = no
+			can_disband = no
+			uses_naval_capacity = no
+			is_boss = yes
+			spawn_debris = no
+			can_change_composition = no 
+			can_change_leader = no 
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			if = {
+				limit = { has_global_flag = almighty_nani }
+				while = {
+					count = 16
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_ESCORT"
+					}
+				}
+			} else = {
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_ESCORT"
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_flag = sofe_almighty_scouts
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 250
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+		}
+	}
+}
+
+# Heavy (Battlecruiser)
+create_almighty_heavy = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_HEAVY"
+		settings = { 
+			can_upgrade = no 
+			can_disband = no
+			uses_naval_capacity = no
+			is_boss = yes
+			spawn_debris = no
+			can_change_composition = no 
+			can_change_leader = no 
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			if = {
+				limit = { has_global_flag = almighty_nani }
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_BATTLECRUISER"
+					}
+				}
+				while = {
+					count = 16
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_ESCORT"
+					}
+				}
+			} else = {
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_BATTLECRUISER"
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_flag = sofe_almighty_heavy
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 250
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+		}
+	}
+}
+
+# Honorguard (Titan)
+create_almighty_honorguard = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_HONORGUARD"
+		settings = { 
+			can_upgrade = no 
+			can_disband = no
+			uses_naval_capacity = no
+			is_boss = yes
+			spawn_debris = no
+			can_change_composition = no 
+			can_change_leader = no 
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			if = {
+				limit = {
+					has_global_flag = almighty_nani
+				}
+				while = {
+					count = 4
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_TITAN"
+					}
+				}
+				while = {
+					count = 8
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_BATTLECRUISER"
+					}
+				}
+				while = {
+					count = 16
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_ESCORT"
+					}
+				}
+			} else = {
+				while = {
+					count = 3
+					create_ship = {
+						name = random
+						design = "NAME_ALMIGHTY_TITAN"
+					}
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_flag = sofe_almighty_honorguard
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 250
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+		}
+	}
+}
+
+# Garrison (Titan)
+create_almighty_garrison = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_GARRISON"
+		settings = {
+			spawn_debris = no
+			is_boss = yes
+			garrison = yes
+			uses_naval_capacity = no
+			can_upgrade = no
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			acemod_set_fleet_piloted_exclusion_on = yes
+			while = {
+				count = 14
+				create_ship = {
+					name = random
+					design = "NAME_ALMIGHTY_TITAN"
+				}
+			}
+			assign_leader = last_created_leader
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = return_point
+			set_aggro_range = 350
+			set_location = {
+				target = prev
+				distance = 40
+				angle = random
+			}
+		}
+	}
+}
+
+# Garrison (Battlecruiser)
+create_almighty_garrison_outside = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_GARRISON_OUTSIDE"
+		settings = {
+			spawn_debris = no
+			is_boss = yes
+			garrison = yes
+			uses_naval_capacity = no
+			can_upgrade = no
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			acemod_set_fleet_piloted_exclusion_on = yes
+			while = {
+				count = 20
+				create_ship = {
+					name = random
+					design = "NAME_ALMIGHTY_BATTLECRUISER"
+				}
+			}
+			assign_leader = last_created_leader
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = return_point
+			set_aggro_range = 350
+			set_location = {
+				target = prev
+				distance = 40
+				angle = random
+			}
+		}
+	}
+}
+
+# Anti-Blokkats (Titan)
+create_almighty_blokkats = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "NAME_ALMIGHTY_BLOKKATS"
+		settings = { 
+			can_upgrade = no 
+			can_disband = no
+			uses_naval_capacity = no
+			is_boss = yes
+			spawn_debris = no
+			can_change_composition = no 
+			can_change_leader = no 
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			while = {
+				count = 14
+				create_ship = {
+					name = random
+					design = "NAME_ALMIGHTY_TITAN"
+				}
+			}
+			
+			assign_leader = last_created_leader
+			set_fleet_flag = sofe_almighty_blokkat
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 250
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+		}
+	}
+}
+
+# Leader
+create_almighty_leader = {
+	random_country = {
+		limit = { is_country_type = sbtg_stellarborne_empire }
+		create_leader = {
+			class = commander
+			species = owner_main_species
+			name = random
+			traits = {
+				trait = leader_trait_admiral_ancient_knowledge
+				trait = leader_trait_admiral_bionic_implant
+				trait = leader_trait_admiral_master_mind
+				trait = subclass_commander_admiral
+			}
+			leader_age_min = 151648
+			leader_age_max = 8357112
+			skill = 1000
+
+			hide_age = yes
+			event_leader = yes
+			randomize_traits = no
+
+			skip_background_generation = yes
+			can_manually_change_location = no
+			effect = {
+				set_leader_flag = leader_death_events_blocked
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+on_ship_disabled = {
+	events = {
+		sofe_crisis.9007
+	}
+}
+
+on_entering_battle = {
+	events = {
+		sofe_crisis.99994
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		sofe_gateway.990
+	}
+}
+
+on_game_start = {
+	events = {
+		sofe_options.105
+	}
+}

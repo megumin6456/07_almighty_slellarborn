@@ -1,0 +1,140 @@
+My personal strategies for fighting Almighty SB and what everything is balanced around
+ * All tactics here are assuming no bonus difficulty activation.
+
+Required Mods:
+
+ - Gigas for Supertensiles.
+ - AOT for Phanon Greatwall.
+ - SOTS for Theta Tech + Soulsphere (mainly for Pure Runic production, just AOT can do economy).
+
+Prep Phase:
+
+ - Large Buffer of AI Empires / Bait Planets to buy time.
+ - Max out on all tech (no need for repeatable).
+ - Maximum of 4 choke points leading to empire core.
+ - Phanon Greatwall & Bastion fitted SOTS Starbase in Chokepoints.
+ - Full Soul Devourer fitted Phanon Megaturrets for Greatwall.
+ - +1k or higher supertensile income (to rebuild lost Megaturrets in time).
+ - Enough stuff to rebuild all lost fleets in around 3-6 months.
+ - Stack enough ship build speed to rapid reinforce to do that.
+ - Minimum of 150 shipyards per maxed out fleet.
+ - Around 1800 shipyards empire wide (Assuming 14 fleets to be comfy).
+ - Grab a calculator and do the math yourself if needed, don't get lazy.
+ - Around +1m research points / month or higher.
+ - It is recommended to colonize planets on the greatwall even if you don't need it (auto rebuild starbase outpost).
+
+Fleet Composition:
+
+ - 80 Battlecruisers + 40 Hyperions (2:1 ratio, 2k fleet command limit from gigas, acot defines only give 1k).
+ - Each fleet with silly max leveled Admirals and too many traits.
+ - 10 fleets if you can get ridiculous admirals, 14 fleets for vanilla admirals (or to be comfy).
+ - Hyperions with Soul Devourer T slots, best weapons with 100% tracking + accuracy for everything else.
+ - Balanced Shields, Armor, Hull + Aux Slots full of Afterburners.
+ - Need 2.5k - 3k speed after bonuses apply. Inspect ship manually for accurate stat (ship designer don't show it).
+ - Celestial ships like Planetcrafts / Systemcrafts / Herculeans are usually not worth it (use at your own risk).
+ - If you do decide to use Quasarcraft, be careful and send proper escort fleet (Mod not balanced around them).
+ - Expect to get fleet wiped multiple times over and be ready to instantly rebuild them within 3-6 months.
+ - Total naval cap usage will be around: 12k - 16k depending on what else you got.
+
+
+Combat Tactics
+________________________
+
+Just before & after spawning:
+
+ - Get everything out of the outergate systems, move all fleets / ships behind your chokepoints.
+ - Give up on the rest of the galaxy (including your own planets outside chokepoints).
+ - If you have Wormholes / L-Gates leading inside your chokepoint held space, give up on life!
+ 
+ - Depending on your readiness, hotkey / split up fully upgraded fleets into ~4 offensive divisions.
+ - If your Greatwalls are not ready yet, assign some fleets for garrison duty.
+
+IMPORTANT NOTE:
+ * Escalation waves are triggered by number of ships killed & time passed.
+ * DO NOT ENTER THE OUTER CLUSTER UNTIL YOU ARE READY OR FACE PUNISHMENT! Forbid the entry system!
+
+Wave 1 (Escorts Fleets):
+
+ * The easiest wave to deal with, they mainly exist to be farmed by people who don't have SOTS installed.
+ - Use your 4 offensive divisions and start picking off individual fleets simultaneously.
+ - Make sure you have enough fleet power to win against around 3 fleets combined in case of ambush.
+ - Stellarborn ships are very fast but they tend to target planets more than ships.
+ - Try to predict their movements with this fact and jump drive ahead of them if you can't catch.
+ 
+ - Stop farming them when the Stellarborn contact you, do the special project, research static light reactor.
+ - Go back to farming and start harvesting light matter, keep an eye out for kill count.
+ 
+Wave 2 (Battlecruiser Escalation):
+
+ * Stellarborn will despawn all of their Wave 1 Escorts when it triggers so any combat will stop.
+ - Jump drive all offensive fleets back inside your chokepoints the instant you get notified.
+ 
+ - If you have enough research unlocked, bunker down behind the Greatwalls and do those.
+ - Take the time to tech rush toward X slot and T slot weapons you need to upgrade the Greatwall Megaturrets.
+ - Only go on the offensive if you are confident and make sure to death stack them (No more solo fleets).
+ - The main reason the fight now is to unlock all the static light techs. If you don't need them don't fight.
+ 
+ - Escalation will trigger faster if you kill more ships so stall Wave 3 for as long as possible and prepare.
+ - Once everything is ready, start killing and trigger wave 3 (hopefully on purpose).
+
+Wave 3 (Hyperion Escalation):
+
+ - When this hits keep an eye on your Greatwalls! There is a good chance they will break and especially the Starbase!
+ - Slowly withdraw fleets from the Greatwalls to test their strength. Be ready to intervene with fleets if they start to crack.
+ - Once you are sure the Greatwalls can hold, do some offensive runs and finish all static light techs if you don't have them all.
+
+ * Be super careful now as a single Stellarborn Hyperion have to power of celestial fleets.
+ * As each AI Empire / buffer zone falls, their attacks will become more focused on you. Your Omega Greatwalls will start to slowly crack.
+ - Use your massive supertensile production to restore them faster than they die, reinforce fleets as soon as they get wiped.
+ - Build up a solid force while defending and prepare to attack the outer cluster.
+
+Outer Cluster:
+
+ * Another type Escalation, no notification, triggered as soon as anything enter the outer cluster
+ * More ships will spawn in an attempt to kick you out of it but it have an invisible cooldown.
+
+ - The instant you enter the outer cluster, LEAVE! You really don't want that wave.
+ - Get back, bait them into the Greatwall and kill them along with all attacking fleets.
+ - There is a cooldown before attack waves can respawn, if you kill them all there will be a downtime.
+ 
+ - Use that downtime to go on the offensive, pick off worlds one by one.
+ - Recommended to use one sacrificial fleet for bombardment and retreat the rest to chokepoints.
+ - When the bombardment fleet falls as the new attack waves spawn, quickly replace it before devastation ticks down.
+ - Finish off all the worlds.
+ 
+NOTES: 
+ * Stay away from the final boss system (you'll now when you see it).
+ * When all worlds are destroyed, they will not be able to respawn offensive fleets thus weakening the crisis.
+ * The worlds MUST be bombarded! DO NOT attempt to invade them, if you can that is a bug.
+
+Arkship Final Boss:
+
+ - Build up around 14 static light fleets, throw them at it around 2-3 times.
+ - You will get fleet wiped but should win the second time assuming you do enough damage.
+ - Check situation log for how many lives it have.
+ - If you have enough damage, it can be killed within a month.
+ - If you have universe ending damage, it can be paralyzed so it won't shoot back most of the time.
+
+ - Herculeans surrounding it usually don't fight back but sometimes they do. Depends on the mood.
+ - They mainly act as distractions and drawing your fire toward useless targets if they don't outright fight you.
+ - Your goal here is to SNIPE the Arkship, nothing else matters.
+ - Once lives fall below a threshold, Almost ALL Stellarborn ships still exist in the galaxy will be mass recalled.
+ - So it is recommended to kill everything else off outside the system before you engage.
+ 
+Congrats you won:
+
+ - Now go outside and have a cupcake!
+
+________________________
+
+Minor Notes:
+
+ * Almighty Stellarbone use omega section precursor ships with flowing light modules.
+ * There are 3 waves in total: Escorts, Battlecruisers, and Hyperions.
+ * Each ship use only one weapon type for damage & no strike crafts or point defense.
+ * For each escalation: all weapons & defensive modules get upgraded as well so its not just ships getting bigger.
+ * The only exception for this is their starbases which use static light missiles (T slot Megumin missiles).
+ * The outer cluster starbases have defensive stations with X slot Speedwagon missiles.
+ * While they expand into surrounding systems, starbases do not have FLT inhibitors as they'll be just painful.
+ * If you lose a system and they expand into it, a construction ship with an escort can reclaim it after the second time.
+ * You need to instantly kill the station and start building your own, the time margin is very narrow but you can do it.

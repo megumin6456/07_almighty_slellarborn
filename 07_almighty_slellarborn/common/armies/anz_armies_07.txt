@@ -1,0 +1,26 @@
+# Our land is Divine
+anz_almighty_autarch = {
+	damage = 250.00
+	health = 150.00
+	morale = 200
+	has_morale = yes
+	morale_damage = 100.0
+	collateral_damage = 10
+	war_exhaustion = 0.00
+	time = 10
+	icon = GFX_anz_almighty_autarch
+	
+	resources = {
+		category = armies
+		produces = {
+			unity = 2
+			acot_sr_light_matter = 4
+		}
+	}
+	
+	potential = {
+		has_global_flag = almighty_sofe
+		has_global_flag = active_sofe_crisis
+		is_country_type = sbtg_stellarborne_empire
+	}
+}

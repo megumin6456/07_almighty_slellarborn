@@ -1,0 +1,19 @@
+immortal_herc_speed = {
+	ship_speed_reduction = 5000
+	ship_speed_mult = -5000
+}
+
+sofe_almighty_nerfed = {
+	damage_vs_country_type_sbtg_stellarborne_empire_mult = -0.80
+	ship_weapons_range = -0.8
+	ship_shield_penetration_mult = -100
+	ship_armor_penetration_mult = -100
+}
+
+sofe_almighty_buffed = {
+	ship_fire_rate_mult = 5
+	ship_weapon_range_mult = 5
+	ship_speed_mult = 5
+	ship_shield_penetration_mult = 50
+	ship_armor_penetration_mult = 50
+}

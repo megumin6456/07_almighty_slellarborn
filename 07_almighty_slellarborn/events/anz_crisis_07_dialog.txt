@@ -1,0 +1,962 @@
+namespace = sofe_crisis
+
+# Origin Introduction
+country_event = {
+	id = sofe_crisis.24
+	title = "origin_diplo_header_2"
+	desc = {
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}
+		}
+		text = sofe_crisis.15.1.desc
+	}
+	desc = {
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			NOT = {
+				has_global_flag = almighty_sofe
+			}
+		}
+		text = sofe_crisis.15.1.desc.fallen
+	}
+	desc = {
+		trigger = {
+			OR = {
+				is_country_type = eternal_empire
+			}
+			NOT = {
+				has_global_flag = almighty_sofe
+			}
+		}
+		text = sofe_crisis.15.1.desc.eternal
+	}
+	desc = {
+		trigger = {
+			is_progenitor_empires = yes
+			NOT = {
+				has_global_flag = almighty_sofe
+			}
+		}
+		text = sofe_crisis.15.1.desc.oe
+	}
+	desc = {
+		trigger = {
+			is_progenitor_empires = no
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.15.1.desc.almighty
+	}
+	desc = {
+		trigger = {
+			is_progenitor_empires = yes
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.15.1.desc.almighty.oe
+	}
+	
+	diplomatic = yes
+	
+	picture_event_data = {
+		portrait = event_target:sofe_crisis_country
+		room = "personality_original_empire_room"
+	}
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = sofe_crisis.15.almighty
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+	}
+
+	option = {
+		name = sofe_crisis.15.a
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}			
+		}
+		response_text = sofe_crisis.15.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.b
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}			
+		}
+		response_text = sofe_crisis.15.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.c
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}			
+		}
+		response_text = sofe_crisis.15.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.d
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}			
+		}
+		response_text = sofe_crisis.15.d.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.e
+		trigger = {
+			NOR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				is_country_type = eternal_empire
+				is_country_type = sbtg_stellarborne_empire_active
+				has_global_flag = almighty_sofe
+			}			
+		}
+		default_hide_option = yes
+	}
+
+	option = {
+		name = sofe_crisis.15.fallen.a
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.fallen.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.fallen.b
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.fallen.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.fallen.c
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.fallen.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.fallen.d
+		response_text = sofe_crisis.15.fallen.d.response
+		trigger = {
+			OR = {
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		default_hide_option = yes
+	}
+
+	option = {
+		name = sofe_crisis.15.eternal.a
+		trigger = {
+			OR = {
+				is_country_type = eternal_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.eternal.a.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.eternal.b
+		trigger = {
+			OR = {
+				is_country_type = eternal_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.eternal.b.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.eternal.c
+		trigger = {
+			OR = {
+				is_country_type = eternal_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		response_text = sofe_crisis.15.eternal.c.response
+		is_dialog_only = yes
+	}
+	option = {
+		name = sofe_crisis.15.eternal.d
+		trigger = {
+			OR = {
+				is_country_type = eternal_empire
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		default_hide_option = yes
+	}
+
+	option = {
+		name = sofe_crisis.15.oe.a
+		response_text = sofe_crisis.15.oe.a.response
+		is_dialog_only = yes
+		trigger = {
+			is_progenitor_empires = yes
+			NOT = { has_global_flag = almighty_sofe }
+		}
+	}
+
+	option = {
+		name = sofe_crisis.15.oe.b
+		response_text = sofe_crisis.15.oe.b.response
+		is_dialog_only = yes
+		trigger = {
+			is_progenitor_empires = yes
+			NOT = { has_global_flag = almighty_sofe }
+		}
+	}
+
+	option = {
+		name = sofe_crisis.15.oe.c
+		response_text = sofe_crisis.15.oe.c.response
+		is_dialog_only = yes
+		trigger = {
+			is_progenitor_empires = yes
+			NOT = { has_global_flag = almighty_sofe }
+		}
+	}
+
+	option = {
+		name = sofe_crisis.15.oe.d
+		response_text = sofe_crisis.15.oe.d.response
+		trigger = {
+			is_progenitor_empires = yes
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		default_hide_option = yes
+	}
+
+	after = {
+	}
+}
+
+# Origin Good Man Diplomacy
+country_event = {
+	id = sofe_crisis.600
+	title = "origin_diplo_header_2"
+
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }				
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			}
+		}
+		text = "sofe_crisis.550.a.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 		
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			} 
+		}
+		text = "sofe_crisis.550.b.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			} 
+		}
+		text = "sofe_crisis.550.c.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			} 
+		}
+		text = "sofe_crisis.550.d.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			} 
+		}
+		text = "sofe_crisis.550.e.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire		
+				is_country_type = lost_empire	
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			} 
+		}
+		text = "sofe_crisis.550.f.desc"
+	}
+	desc = {
+		trigger = {
+			any_agreement = { agreement_preset = sbtg_preset_timeout }
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.j.desc"
+	}
+	desc = {
+		trigger = {
+			any_agreement = { agreement_preset = sbtg_preset_timeout }
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.k.desc"
+	}
+	desc = {
+		trigger = {
+			any_agreement = { agreement_preset = sbtg_preset_timeout }
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.m.desc"
+	}
+	desc = {
+		trigger = {
+			any_agreement = { agreement_preset = sbtg_preset_timeout }
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.p.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = fallen_empire 
+				is_country_type = awakened_fallen_empire 				
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.fallen.a.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = fallen_empire 
+				is_country_type = awakened_fallen_empire 				
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.fallen.b.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_country_type = fallen_empire 
+				is_country_type = awakened_fallen_empire 				
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.fallen.c.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = againstoe
+			is_country_type = eternal_empire
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.a.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = againstoe
+			is_country_type = eternal_empire
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.b.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = againstoe
+			is_country_type = eternal_empire 
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.c.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = withoe
+			is_country_type = eternal_empire 
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.d.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = withoe
+			is_country_type = eternal_empire 
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.e.desc"
+	}
+	desc = {
+		trigger = { 
+			has_modifier = withoe
+			is_country_type = eternal_empire 
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.eternal.f.desc"
+	}
+	desc = {
+		trigger = { has_country_flag = rebelling_protectorate
+		NOT = { has_global_flag = almighty_sofe } }
+		text = "sofe_crisis.550.r.desc"
+	}
+	desc = {
+		trigger = { has_country_flag = rebelling_protectorate
+		NOT = { has_global_flag = almighty_sofe } }
+		text = "sofe_crisis.550.s.desc"
+	}
+	desc = {
+		trigger = { has_country_flag = rebelling_protectorate
+		NOT = { has_global_flag = almighty_sofe } }
+		text = "sofe_crisis.550.t.desc"
+	}
+	desc = {
+		trigger = { has_country_flag = rebelling_protectorate
+		NOT = { has_global_flag = almighty_sofe } }
+		text = "sofe_crisis.550.u.desc"
+	}
+	desc = {
+		trigger = {
+			OR = {
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.v.desc"
+	}
+	desc = {
+		trigger = {
+				has_valid_civic = "civic_machine_servitor"
+				NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.servitor.desc"
+	}
+	desc = {
+		trigger = {
+				has_valid_civic = "civic_fanatic_purifiers"
+				NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.purifier.desc"
+	}
+	desc = {
+		trigger = {
+				has_valid_civic = "civic_machine_terminator"
+				NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.terminator.desc"
+	}
+	desc = {
+		trigger = {
+				has_valid_civic = "civic_hive_devouring_swarm"
+				NOT = { has_global_flag = almighty_sofe }
+		}
+		text = "sofe_crisis.550.swarm.desc"
+	}
+	desc = {
+		trigger = { 
+			OR = {
+				is_progenitor_empires = yes
+			}
+			NOT = { has_global_flag = almighty_sofe }
+		}
+		text = sofe_crisis.550.playoe.a.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.a.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.b.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.c.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.d.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.e.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.f.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.g.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+		}
+		text = sofe_crisis.550.almighty.h.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			has_global_flag = almighty_bunny_jump
+		}
+		text = sofe_crisis.550.almighty.i.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			has_global_flag = almighty_bunny_jump
+		}
+		text = sofe_crisis.550.almighty.j.desc
+	}
+	desc = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			has_global_flag = almighty_bunny_jump
+		}
+		text = sofe_crisis.550.almighty.k.desc
+	}
+	
+	picture_event_data = {
+		portrait = event_target:sofe_crisis_country
+		room = "personality_original_empire_room"
+	}
+	
+	is_triggered_only = yes
+	force_open = yes
+	diplomatic = yes
+
+	trigger = {
+		from = { is_country_type = sbtg_stellarborne_empire }
+		NOR = { 
+			has_country_flag = original_diplomacy_engaged 
+		}
+	}
+
+	immediate = {
+		set_country_flag = original_diplomacy_engaged
+	}
+
+	after = {
+		hidden_effect = {
+			remove_country_flag = original_diplomacy_engaged
+		}
+	}
+
+	option = { # Submit?
+		name = sofe_crisis.550.a
+		trigger = {
+			OR = {
+				is_country_type = default
+				is_country_type = ascended_empire
+				is_country_type = lost_empire
+			}
+			NOR = { 
+				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				has_country_flag = rebelling_protectorate
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			}
+		}
+		hidden_effect = {
+			country_event = { id = sofe_crisis.602 }
+		}
+	}
+
+	option = { # Ask for Redemption - DS?
+		name = sofe_crisis.550.redemption.swarm
+		trigger = {
+			has_valid_civic = "civic_hive_devouring_swarm"
+		}
+		hidden_effect = {
+			country_event = { id = sofe_crisis.6002 }
+		}
+	}
+
+	option = { # Ask for Redemption - DE?
+		name = sofe_crisis.550.redemption.terminator
+		trigger = {
+			has_valid_civic = "civic_machine_terminator"
+		}
+		hidden_effect = {
+			country_event = { id = sofe_crisis.6002 }
+		}
+	}
+
+	option = { # Ask for Redemption - FP?
+		name = sofe_crisis.550.redemption.purifier
+		trigger = {
+			has_valid_civic = "civic_fanatic_purifiers"
+		}
+		hidden_effect = {
+			country_event = { id = sofe_crisis.6002 }
+		}
+	}
+
+	option = {
+		name = sofe_crisis.550.b
+		trigger = {
+			NOR = { 
+				has_country_flag = asked_about_origin 
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire
+				has_global_flag = almighty_sofe
+			}
+		}
+		response_text = sofe_crisis.550.b.response
+		is_dialog_only = yes
+		hidden_effect = {
+			set_country_flag = asked_about_origin
+		}
+	}
+
+	option = {
+		name = sofe_crisis.550.c
+		trigger = {
+			NOR = { 
+				has_country_flag = asked_about_darkmatter
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			}
+		}
+		response_text = sofe_crisis.550.c.response
+		is_dialog_only = yes
+		hidden_effect = {
+			set_country_flag = asked_about_darkmatter
+		}
+	}
+
+	option = {
+		name = sofe_crisis.550.ask_fallen_gone
+		trigger = {
+			NOR = { 
+				is_country_type = fallen_empire
+				is_country_type = awakened_fallen_empire	
+				is_country_type = eternal_empire			
+				has_country_flag = asked_about_fallengone
+				has_valid_civic = "civic_fanatic_purifiers"
+				has_valid_civic = "civic_hive_devouring_swarm"
+				has_valid_civic = "civic_machine_terminator"
+				has_valid_civic = "civic_machine_servitor"
+				has_global_flag = almighty_sofe
+			}
+			NOT = {
+				any_country = {
+					OR = {
+						is_country_type = fallen_empire
+						is_country_type = awakened_fallen_empire					
+					}
+				}
+			}
+		}
+		response_text = sofe_crisis.550.ask_fallen_gone_response
+		is_dialog_only = yes
+		hidden_effect = {
+			set_country_flag = asked_about_fallengone
+		}
+	}
+
+	option = { # Rebel?
+		name = sofe_crisis.550.d
+		trigger = {
+			any_agreement = { agreement_preset = sbtg_preset_timeout }
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = sofe_crisis.550.d_fail
+				NOT = { has_country_flag = rebellion_cooldown }
+			}
+		}
+		hidden_effect = {
+			country_event = { id = sofe_crisis.607 }
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			NOT = { has_country_flag = asked_almighty_surrender }
+		}
+		name = sofe_crisis.15.550.almighty.a
+		response_text = sofe_crisis.15.550.almighty.a.response
+		is_dialog_only = yes
+		hidden_effect = { set_country_flag = asked_almighty_surrender }
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			has_country_flag = asked_almighty_surrender
+			is_ai = no
+		}
+		name = sofe_crisis.15.550.almighty.a
+		response_text = sofe_crisis.15.550.almighty.a.shutup
+		is_dialog_only = yes
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			NOR = {
+				has_global_flag = sofe_almighty_heavy_fleets_only
+				has_global_flag = sofe_almighty_honorguard_fleets_only
+			}
+			is_ai = no
+		}
+		name = sofe_crisis_15.550.almighty.b
+		custom_tooltip = sofe_crisis.15.550.almighty.b.tooltip
+		response_text = sofe_crisis_15.550.almighty.b.response
+
+		hidden_effect = {
+			event_target:sofe_crisis_country = {
+				country_event = { id = sofe_crisis.99991 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			is_ai = no
+			NOT = { has_global_flag = sofe_almighty_honorguard_fleets_only }
+		}
+		name = sofe_crisis.15.550.almighty.c
+		custom_tooltip = sofe_crisis.15.550.almighty.b.tooltip
+		response_text = sofe_crisis_15.550.almighty.c.response
+
+		hidden_effect = {
+			event_target:sofe_crisis_country = {
+				country_event = { id = sofe_crisis.99995 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			# has_global_flag = sofe_almighty_honorguard_fleets_only
+			is_ai = no
+			NOT = { has_global_flag = almighty_nani }
+		}
+		name = sofe_crisis_15.550.almighty.d
+		custom_tooltip = sofe_crisis_15.550.almighty.d.tooltip
+		response_text = sofe_crisis_15.550.almighty.d.response
+
+		hidden_effect = {
+			set_global_flag = almighty_nani
+			every_country = {
+				limit = {
+					is_progenitor_empires = no
+				}
+				add_modifier = {
+					modifier = sofe_almighty_nerfed
+					months = 12
+				}
+				country_event = { id = sofe_crisis.99999 days = 0 }
+			}
+			event_target:sofe_crisis_country = {
+				add_modifier = {
+					modifier = sofe_almighty_buffed
+					days = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			is_ai = no
+			NOR = {
+				has_global_flag = almighty_bunny_jump
+				has_country_flag = asked_almighty_bunny_jump
+			}
+		}
+		name = sofe_crisis_15.550.almighty.e
+		custom_tooltip = sofe_crisis_15.550.almighty.e.tooltip
+		response_text = sofe_crisis_15.550.almighty.e.response
+
+		is_dialog_only = yes
+
+		hidden_effect = {
+			set_country_flag = asked_almighty_bunny_jump
+		}
+	}
+
+	option = {
+		trigger = {
+			has_global_flag = almighty_sofe
+			is_ai = no
+			has_country_flag = asked_almighty_bunny_jump
+			NOT = { has_global_flag = almighty_bunny_jump }
+		}
+		name = sofe_crisis_15.550.almighty.f
+		custom_tooltip = sofe_crisis_15.550.almighty.f.tooltip
+		response_text = sofe_crisis_15.550.almighty.f.response
+
+		hidden_effect = {
+			set_global_flag = almighty_bunny_jump # custom jump drive ai
+			set_timed_global_flag = {
+				flag = almighty_bunny_jump_exclude_player
+				years = 6
+			}
+			event_target:sofe_crisis_country = {
+				# acemod jump drive ai
+				set_country_flag = acemod_sfex_jumpdrive_order_country_flag_ignore_has_ftl_drive
+			}
+			every_country = {
+				country_event = { id = sofe_crisis.100000 days = 0 }
+			}
+		}
+	}
+
+	option = {
+		name = sofe_crisis.20.e
+		default_hide_option = yes
+	}
+}

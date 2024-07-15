@@ -1,0 +1,81 @@
+namespace = sofe_gateway
+
+## EE Imported Code
+country_event = {
+	id = sofe_gateway.6
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		is_ai = no ## Step away you dummy!
+		NOT = { 
+			has_global_flag = outer_cluster_opened 	
+		}
+		has_global_flag = sofe_shield_weaken
+		any_owned_megastructure = {
+			is_megastructure_type = sofe_outer_gate
+		}
+		NOT = {
+			has_country_flag = outer_gate_research_began
+		}
+	}
+
+	immediate = {
+		set_country_flag = outer_gate_research_began
+		random_owned_megastructure = {
+			limit = {
+				is_megastructure_type = sofe_outer_gate
+			}
+			save_event_target_as = candidate_outergateway
+		}
+		country_event = { id = sofe_gateway.601 } # enable project	
+	}
+}
+## END OF IMPORT
+
+# Summon at 2500
+country_event = {
+	id = sofe_gateway.990
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_global_flag = active_sofe_crisis
+			has_global_flag = outer_cluster_opened
+		}
+		has_global_flag = sofe_shield_weaken
+		has_global_flag = almighty_sofe
+		years_passed > 300
+	}
+
+	immediate = {
+		set_country_flag = outercluster_opener
+		set_global_flag = sofe_oe_crisis_imminent
+		set_global_flag = outer_cluster_opened
+		every_megastructure = {
+			limit = {
+				is_megastructure_type = sofe_outer_gate
+			}
+			activate_gateway = this
+		}
+		every_ambient_object = {
+			limit = {
+				has_ambient_object_flag = sofe_shield_full
+			}
+			destroy_ambient_object = this
+		}
+		every_ambient_object = {
+			limit = {
+				has_ambient_object_flag = sofe_shield_partial
+			}
+			destroy_ambient_object = this
+		}
+		every_playable_country = {
+			country_event = { id = sofe_gateway.202 }
+		}
+	}
+}

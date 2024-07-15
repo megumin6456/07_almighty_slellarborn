@@ -1,0 +1,70 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_evt_sofe_menu_difficulty"
+		texturefile = "gfx/event_pictures/GFX_evt_sofe_menu_difficulty.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+
+	spriteType = {
+		name = "GFX_fleet_order_button_ground_support_hypernova_selected"
+		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_oe_nova_selected.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+
+	spriteType = {
+		name = "GFX_fleet_order_button_ground_support_hypernova"
+			texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_oe_nova_action.dds"
+			effectFile = "gfx/FX/buttonstate.lua"
+			noOfFrames = 3
+			animation = {
+			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
+			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+
+	spriteType = {
+		name = "GFX_planet_modifier_ground_support_hypernova"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_bombard_hypernova.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_acot_flagship_radientexplosions"
+		textureFile = "gfx/interface/icons/ship_parts/anz_radexp_07.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_colony_type_col_sofe_world"
+		alwaystransparent = yes
+		textureFile = "gfx/interface/planetview/anz_07_lightmatter.dds"
+	}
+
+	spriteType = { 
+		name = "GFX_anz_almighty_autarch"
+		alwaystransparent = yes
+		textureFile = "gfx/interface/icons/armies/anz_almighty_autarch.dds"
+	}
+}
