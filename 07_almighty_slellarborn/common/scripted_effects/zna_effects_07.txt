@@ -474,7 +474,7 @@ create_almighty_hercs = {
 	if = {
 		limit = { has_global_flag = almighty_sofe }
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -485,8 +485,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -501,7 +501,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -512,8 +512,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -528,7 +528,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -539,8 +539,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -555,7 +555,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -566,8 +566,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -582,7 +582,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -593,8 +593,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -609,7 +609,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -620,8 +620,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						add_modifier = {
 							modifier = immortal_herc_speed
@@ -636,7 +636,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -647,8 +647,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						set_ship_flag = immortal_herc
 						set_disable_at_health = 0.1
@@ -665,7 +665,7 @@ create_almighty_hercs = {
 			}
 		}
 		create_fleet = {
-			name = "NAME_ALMIGHTY_HERCS"
+			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
 				spawn_debris = no 
 				is_boss = yes
@@ -676,8 +676,8 @@ create_almighty_hercs = {
 				set_owner = event_target:sofe_crisis_country
 				acemod_set_fleet_piloted_exclusion_on = yes
 				create_ship = {
-					name = "NAME_ALMIGHTY_HERCS"
-					design = "NAME_ALMIGHTY_HERCS"
+					name = "ANZ_ALMIGHTY_HERCS"
+					design = "ANZ_ALMIGHTY_HERCS"
 					effect = {
 						set_ship_flag = immortal_herc
 						set_disable_at_health = 0.1
@@ -737,6 +737,7 @@ create_almighty_citadel_home = {
 		owner = event_target:sofe_crisis_country
 
 		effect = {
+			fleet = { set_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol }
 			while = {
 				count = 10
 				create_almighty_tower = yes
@@ -748,7 +749,7 @@ create_almighty_citadel_home = {
 create_almighty_tower = {
 	create_ship = {
 		name = random
-		design = "NAME_ALMIGHTY_TOWER"	
+		design = "ANZ_ALMIGHTY_TOWER"	
 	}	
 }
 
@@ -756,7 +757,7 @@ create_almighty_tower = {
 create_almighty_scouts = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_SCOUTS"
+		name = "ANZ_ALMIGHTY_SCOUTS"
 		settings = { 
 			can_upgrade = no
 			can_disband = no
@@ -774,7 +775,7 @@ create_almighty_scouts = {
 					count = 16
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_ESCORT"
+						design = "ANZ_ALMIGHTY_ESCORT"
 					}
 				}
 			} else = {
@@ -782,12 +783,12 @@ create_almighty_scouts = {
 					count = 3
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_ESCORT"
+						design = "ANZ_ALMIGHTY_ESCORT"
 					}
 				}
 			}
 			assign_leader = last_created_leader
-			set_fleet_flag = sofe_almighty_scouts
+			set_fleet_flag = anz_almighty_scouts
 			set_formation_scale = 2
 			set_fleet_stance = aggressive
 			set_aggro_range_measure_from = self
@@ -805,7 +806,7 @@ create_almighty_scouts = {
 create_almighty_heavy = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_HEAVY"
+		name = "ANZ_ALMIGHTY_HEAVY"
 		settings = { 
 			can_upgrade = no 
 			can_disband = no
@@ -823,14 +824,14 @@ create_almighty_heavy = {
 					count = 8
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_BATTLECRUISER"
+						design = "ANZ_ALMIGHTY_BATTLECRUISER"
 					}
 				}
 				while = {
 					count = 16
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_ESCORT"
+						design = "ANZ_ALMIGHTY_ESCORT"
 					}
 				}
 			} else = {
@@ -838,12 +839,12 @@ create_almighty_heavy = {
 					count = 3
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_BATTLECRUISER"
+						design = "ANZ_ALMIGHTY_BATTLECRUISER"
 					}
 				}
 			}
 			assign_leader = last_created_leader
-			set_fleet_flag = sofe_almighty_heavy
+			set_fleet_flag = anz_almighty_heavy
 			set_formation_scale = 2
 			set_fleet_stance = aggressive
 			set_aggro_range_measure_from = self
@@ -861,7 +862,7 @@ create_almighty_heavy = {
 create_almighty_honorguard = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_HONORGUARD"
+		name = "ANZ_ALMIGHTY_HONORGUARD"
 		settings = { 
 			can_upgrade = no 
 			can_disband = no
@@ -881,21 +882,21 @@ create_almighty_honorguard = {
 					count = 4
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_TITAN"
+						design = "ANZ_ALMIGHTY_TITAN"
 					}
 				}
 				while = {
 					count = 8
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_BATTLECRUISER"
+						design = "ANZ_ALMIGHTY_BATTLECRUISER"
 					}
 				}
 				while = {
 					count = 16
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_ESCORT"
+						design = "ANZ_ALMIGHTY_ESCORT"
 					}
 				}
 			} else = {
@@ -903,12 +904,65 @@ create_almighty_honorguard = {
 					count = 3
 					create_ship = {
 						name = random
-						design = "NAME_ALMIGHTY_TITAN"
+						design = "ANZ_ALMIGHTY_TITAN"
 					}
 				}
 			}
 			assign_leader = last_created_leader
-			set_fleet_flag = sofe_almighty_honorguard
+			set_fleet_flag = anz_almighty_honorguard
+			set_formation_scale = 2
+			set_fleet_stance = aggressive
+			set_aggro_range_measure_from = self
+			set_aggro_range = 250
+			set_location = {
+				target = prev
+				distance = 0
+				angle = 0
+			}
+		}
+	}
+}
+
+# Honorguard XL (Titan)
+create_almighty_honorguard_counterAttack = {
+	create_almighty_leader = yes
+	create_fleet = {
+		name = "ANZ_ALMIGHTY_HONORGUARD"
+		settings = { 
+			can_upgrade = no 
+			can_disband = no
+			uses_naval_capacity = no
+			is_boss = yes
+			spawn_debris = no
+			can_change_composition = no 
+			can_change_leader = no 
+		}
+		effect = {
+			set_owner = event_target:sofe_crisis_country
+			while = {
+				count = 4
+				create_ship = {
+					name = random
+					design = "ANZ_ALMIGHTY_TITAN"
+				}
+			}
+			while = {
+				count = 8
+				create_ship = {
+					name = random
+					design = "ANZ_ALMIGHTY_BATTLECRUISER"
+				}
+			}
+			while = {
+				count = 16
+				create_ship = {
+					name = random
+					design = "ANZ_ALMIGHTY_ESCORT"
+				}
+			}
+			assign_leader = last_created_leader
+			set_fleet_flag = anz_almighty_honorguard_counterAttack
+			acemod_set_fleet_piloted_exclusion_on = yes
 			set_formation_scale = 2
 			set_fleet_stance = aggressive
 			set_aggro_range_measure_from = self
@@ -926,7 +980,7 @@ create_almighty_honorguard = {
 create_almighty_garrison = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_GARRISON"
+		name = "ANZ_ALMIGHTY_GARRISON"
 		settings = {
 			spawn_debris = no
 			is_boss = yes
@@ -936,12 +990,13 @@ create_almighty_garrison = {
 		}
 		effect = {
 			set_owner = event_target:sofe_crisis_country
+			set_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
 			acemod_set_fleet_piloted_exclusion_on = yes
 			while = {
 				count = 14
 				create_ship = {
 					name = random
-					design = "NAME_ALMIGHTY_TITAN"
+					design = "ANZ_ALMIGHTY_TITAN"
 				}
 			}
 			assign_leader = last_created_leader
@@ -962,7 +1017,7 @@ create_almighty_garrison = {
 create_almighty_garrison_outside = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_GARRISON_OUTSIDE"
+		name = "ANZ_ALMIGHTY_GARRISON_OUTSIDE"
 		settings = {
 			spawn_debris = no
 			is_boss = yes
@@ -972,12 +1027,13 @@ create_almighty_garrison_outside = {
 		}
 		effect = {
 			set_owner = event_target:sofe_crisis_country
+			set_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
 			acemod_set_fleet_piloted_exclusion_on = yes
 			while = {
 				count = 20
 				create_ship = {
 					name = random
-					design = "NAME_ALMIGHTY_BATTLECRUISER"
+					design = "ANZ_ALMIGHTY_BATTLECRUISER"
 				}
 			}
 			assign_leader = last_created_leader
@@ -998,7 +1054,7 @@ create_almighty_garrison_outside = {
 create_almighty_blokkats = {
 	create_almighty_leader = yes
 	create_fleet = {
-		name = "NAME_ALMIGHTY_BLOKKATS"
+		name = "ANZ_ALMIGHTY_BLOKKATS"
 		settings = { 
 			can_upgrade = no 
 			can_disband = no
@@ -1014,12 +1070,12 @@ create_almighty_blokkats = {
 				count = 14
 				create_ship = {
 					name = random
-					design = "NAME_ALMIGHTY_TITAN"
+					design = "ANZ_ALMIGHTY_TITAN"
 				}
 			}
 			
 			assign_leader = last_created_leader
-			set_fleet_flag = sofe_almighty_blokkat
+			set_fleet_flag = anz_almighty_blokkat
 			set_formation_scale = 2
 			set_fleet_stance = aggressive
 			set_aggro_range_measure_from = self

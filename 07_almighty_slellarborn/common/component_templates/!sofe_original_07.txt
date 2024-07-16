@@ -1,5 +1,5 @@
 weapon_component_template = {
-	key = "ACOT_FLAGSHIP_RADEXP"
+	key = "ANZ_ALMIGHTY_RADEXP"
 	size = titanic
 	type = instant
 	prio_projectile = yes
@@ -21,7 +21,7 @@ weapon_component_template = {
 		tech_ultimate_weapon
 	}
 	
-	component_set = "ACOT_FLAGSHIP_RADEXP"
+	component_set = "ANZ_ALMIGHTY_RADEXP"
 	projectile_gfx = "judgement_beam"
 	size_restriction = { sofe_ancient_weapon }
 		

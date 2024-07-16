@@ -2,6 +2,6 @@ portraits = {
 	anz_megumin_oe = {
 		texturefile = "gfx/models/anz/megumin_oe.dds"
 		clothes_selector = "no_texture"
-		hair_selector = "no_texture"
+		attachment_selector = "no_texture"
 	}
 }

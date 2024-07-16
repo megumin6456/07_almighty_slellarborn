@@ -34,7 +34,7 @@ country_event = {
 		}
 		every_megastructure = {
 			limit = {
-				is_megastructure_type = sofe_outer_gate
+				is_sbtg_outer_gate = yes
 			}
 			activate_gateway = this
 			set_megastructure_flag = acemod_megastructure_flag_is_active_bypass
@@ -92,7 +92,7 @@ country_event = {
 		# Empire Stuff for Almighty vs Normal
 		if = { limit = { has_global_flag = almighty_sofe }
 			create_country = {
-				name = "NAME_ALMIGHTY_STELLARBORNE"
+				name = "ANZ_ALMIGHTY_STELLARBORNE"
 				type = "sbtg_stellarborne_empire"
 				species = event_target:origin_species
 				name_list = "Stellarborne"
@@ -122,13 +122,19 @@ country_event = {
 				effect = {
 					save_global_event_target_as = sofe_crisis_country
 
-					# ACE AI
+					# ACE MOD AI Framework
 					set_global_flag = acemod_activated
+					remove_global_flag = acemod_defensive_jumpdrive_protocol_disabled
+					remove_global_flag = acemod_advanced_ai_disabled
+					remove_global_flag = acemod_global_flag_jumpdrive_order_disabled
+
 					set_country_flag = acemod_assisted_ai
 					set_country_flag = acemod_country_flag_disabled_constructor_ai
 					set_country_flag = acemod_country_flag_disabled_army_ai
 					set_country_flag = acemod_country_flag_disabled_colonizer_ai
-					acemod_set_country_constructor_reinforcements_exclusion_on = yes
+					set_country_flag = acemod_defensive_jumpdrive_protocol
+					set_country_flag = acemod_country_flag_jumpdrive_order_enabled
+					set_country_flag = acemod_set_country_constructor_reinforcements_exclusion_on
 					
 					# Default Designs
 					create_ship_design = { design = "NAME_PROGENITOR_ESCORT" }
@@ -148,18 +154,18 @@ country_event = {
 					add_ship_design = last_created_design
 
 					# Almighty Designs
-					create_ship_design = { design = "NAME_ALMIGHTY_ESCORT" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_ESCORT" }
 					add_ship_design = last_created_design
-					create_ship_design = { design = "NAME_ALMIGHTY_BATTLECRUISER" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_BATTLECRUISER" }
 					add_ship_design = last_created_design
-					create_ship_design = { design = "NAME_ALMIGHTY_TITAN" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_TITAN" }
 					add_ship_design = last_created_design
-					create_ship_design = { design = "NAME_ALMIGHTY_HERCS" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_HERCS" }
 					add_ship_design = last_created_design
 					
-					create_ship_design = { design = "NAME_ALMIGHTY_TOWER" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_TOWER" }
 					add_ship_design = last_created_design
-					create_ship_design = { design = "NAME_ALMIGHTY_CITIDEL" }
+					create_ship_design = { design = "ANZ_ALMIGHTY_CITIDEL" }
 					add_ship_design = last_created_design
 
 					give_technology = { tech = tech_progenitor_escort } 	
@@ -235,7 +241,7 @@ country_event = {
 			every_country = {
 				limit = {
 					OR = {
-						is_country_type = primitive
+						is_primitive = yes
 						is_country_type = tiyanki		
 						is_country_type = guardian	
 						is_country_type = cloud	
@@ -282,12 +288,12 @@ country_event = {
 				acot_sr_dark_energy = 1000000
 				acot_sr_stellarite = 1000000
 				acot_sr_light_matter = 1000000				
-				influence = 1000
+				influence = @influence_max
 				unity = 100000
 			}
 			country_event = { id = sofe_crisis.14 days = 30 } #REINFORCERER
 			create_leader = {
-				class = ruler
+				class = official
 				species = event_target:origin_species
 				name = "leader_oe_king"
 				skill = 100000
@@ -314,7 +320,7 @@ country_event = {
 				create_leader = {
 					class = commander
 					species = event_target:origin_species_megumin
-					name = "NAME_MEGUMIN"
+					name = "ANZ_ALMIGHTY_MEGUMIN"
 					traits = {
 						trait = leader_trait_admiral_ancient_knowledge
 						trait = leader_trait_admiral_bionic_implant
@@ -334,7 +340,7 @@ country_event = {
 					can_manually_change_location = no
 				}
 				create_fleet = {
-					name = "NAME_ALMIGHTY_ARKSHIP"
+					name = "ANZ_ALMIGHTY_ARKSHIP"
 					settings = {
 						spawn_debris = no 
 						is_boss = yes
@@ -345,8 +351,8 @@ country_event = {
 						set_owner = event_target:sofe_crisis_country
 						acemod_set_fleet_piloted_exclusion_on = yes
 						create_ship = {
-							name = "NAME_ALMIGHTY_GAIA"
-							design = "NAME_ALMIGHTY_GAIA"
+							name = "ANZ_ALMIGHTY_GAIA"
+							design = "ANZ_ALMIGHTY_GAIA"
 								effect = {
 									set_disable_at_health = 0.01
 									set_variable = {
@@ -363,6 +369,9 @@ country_event = {
 						}
 						save_event_target_as = origin_flagship_factory
 					}
+				}
+				event_target:star_heart = {
+					set_star_flag = acemod_star_flag_is_active_bypass
 				}
 			} else = {
 				create_leader = {
@@ -427,9 +436,8 @@ country_event = {
 			every_country = {
 				limit = {
 					OR = {
-						is_country_type = default
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire
+						merg_is_default_empire = yes
+						is_fallen_empire = yes
 						is_country_type = eternal_empire
 						is_country_type = sbtg_stellarborne_empire_active
 						is_country_type = ascended_empire
@@ -462,7 +470,7 @@ country_event = {
 					save_event_target_as = OE_Fortress
 					set_owner = event_target:sofe_crisis_country
 					set_controller = event_target:sofe_crisis_country
-					planet_event = { id = sofe_crisis.1302 days = 360 }
+					planet_event = { id = sofe_crisis.1302 days = 4 }
 
 					# added by system init
 					# add_building = building_heaven_sanctuary
@@ -496,7 +504,7 @@ country_event = {
 						create_leader = {
 							class = official
 							species = event_target:origin_species_megumin
-							name = "NAME_MEGUMIN"
+							name = "ANZ_ALMIGHTY_MEGUMIN"
 							traits = {
 								trait = leader_trait_governor_ancient_knowledge
 								trait = leader_trait_governor_bionic_implant
@@ -522,7 +530,7 @@ country_event = {
 						create_leader = {
 							class = commander
 							species = event_target:origin_species_megumin
-							name = "NAME_MEGUMIN"
+							name = "ANZ_ALMIGHTY_MEGUMIN"
 							traits = {
 								trait = leader_trait_general_ancient_knowledge
 								trait = leader_trait_general_bionic_implant
@@ -611,9 +619,9 @@ country_event = {
 
 		event_target:sofe_crisis_country = {
 			# event redirect
-			country_event = { id = sofe_crisis.99987 days = 4 } # Delayed code exec
-			country_event = { id = sofe_crisis.99985 days = 4 } # launch hostile campaign
-			country_event = { id = sofe_crisis.99986 days = 4 } # jump drives are fun
+			country_event = { id = anz_almighty.5 days = 4 } # Delayed code exec
+			country_event = { id = anz_almighty.3 days = 4 } # launch hostile campaign
+			country_event = { id = anz_almighty.4 days = 4 } # jump drives are fun
 
 			# Home Garrison ignored for Almighty in scripted_effects
 			create_leader = {
@@ -866,11 +874,8 @@ country_event = {
 			
 			random_country = {
 				limit = { 
-					OR = {
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire				
-					}
-					NOT = { has_authority = auth_machine_intelligence }
+					is_fallen_empire = yes
+					NOT = { is_machine_empire = yes }
 				}
 				country_event = { id = sofe_crisis.32 days = 60 }
 			}
@@ -881,14 +886,14 @@ country_event = {
 			# Heavy Escalation in 4 years
 			if = { limit = { has_global_flag = almighty_sofe }
 				event_target:sofe_crisis_country = {
-					country_event = { id = sofe_crisis.99991 days = 1440 }
+					country_event = { id = anz_almighty.9 days = 1440 }
 				}
 			}
 
 			# Honorguard Escalation in 8 years
 			if = { limit = { has_global_flag = almighty_sofe }
 				event_target:sofe_crisis_country = {
-					country_event = { id = sofe_crisis.99995 days = 2880 }
+					country_event = { id = anz_almighty.13 days = 2880 }
 				}
 			}
 
@@ -904,12 +909,12 @@ country_event = {
 				limit = {
 					has_star_flag = outercluster_gate
 					any_system_megastructure = { 
-						is_megastructure_type = sofe_outer_gate
+						is_sbtg_outer_gate = yes
 					}
 				}
 				random_system_megastructure = {
 					limit = {
-						is_megastructure_type = sofe_outer_gate
+						is_sbtg_outer_gate = yes
 					}
 					# Almighty Garrison Redirect
 					if = { limit = { has_global_flag = almighty_sofe }
@@ -970,7 +975,7 @@ country_event = {
 						has_star_flag = outercluster_gate
 					}
 					any_system_megastructure = { 
-						is_megastructure_type = sofe_outer_gate
+						is_sbtg_outer_gate = yes
 					}
 				}
 				solar_system = {
@@ -998,7 +1003,7 @@ country_event = {
 				}
 				random_system_megastructure = {
 					limit = {
-						is_megastructure_type = sofe_outer_gate
+						is_sbtg_outer_gate = yes
 					}
 					# Almight Garrison Outside
 					if = { limit = { has_global_flag = almighty_sofe }
@@ -1034,56 +1039,101 @@ country_event = {
 	}
 }
 
-# Original Emprie Fortress
+### GOLDEN WORLD###
 planet_event = {
-	id = sofe_crisis.2555
+	id = sofe_crisis.10
 	hide_window = yes
 	
 	is_triggered_only = yes
 	
 	immediate = {	
-		set_capital = yes
-		save_event_target_as = OE_Fortress
+		save_global_event_target_as = wardenworldA
 		set_owner = event_target:sofe_crisis_country
-		set_controller = event_target:sofe_crisis_country
-		planet_event = { id = sofe_crisis.1302 days = 360 }
-		create_pop = {
-			species = event_target:origin_species
-			count = 3
+		create_point_of_interest = {
+			id = sofe_golden_world.1
+			name = sofe_golden_world.poi
+			event_chain = origin_crisis_chain
+			location = this
 		}
-		
-		root.owner = {
-			create_leader = {
-				class = commander
-				species = event_target:origin_species
-				name = random
-				traits = {
-					trait = leader_trait_general_ancient_knowledge
-					trait = leader_trait_general_bionic_implant
-					trait = leader_trait_general_master_mind
-					trait = subclass_commander_general
-				}
-				leader_age_min = 116501
-				leader_age_max = 982141
-				skill = 10
-			}
+
+		if = { limit = { has_global_flag = almighty_sofe }
+			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
+		} else = {
+			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
 		}
-		create_army = {
-			owner = root.owner
-			species = owner_main_species
-			type = "origin_guardian"
+	}
+}
+
+planet_event = {
+	id = sofe_crisis.11
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {	
+		save_global_event_target_as = wardenworldB
+		set_owner = event_target:sofe_crisis_country
+		# set_controller = event_target:sofe_crisis_country
+		create_point_of_interest = {
+			id = sofe_golden_world.2
+			name = sofe_golden_world.poi
+			event_chain = origin_crisis_chain
+			location = this
 		}
-		create_army = {
-			owner = root.owner
-			species = owner_main_species
-			type = "origin_guardian"
+
+		if = { limit = { has_global_flag = almighty_sofe }
+			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
+		} else = {
+			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
 		}
-		create_army = {
-			owner = root.owner
-			species = owner_main_species
-			type = "origin_guardian"
+	}
+}
+
+planet_event = {
+	id = sofe_crisis.12
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {	
+		save_global_event_target_as = wardenworldC
+		set_owner = event_target:sofe_crisis_country
+		create_point_of_interest = {
+			id = sofe_golden_world.3
+			name = sofe_golden_world.poi
+			event_chain = origin_crisis_chain
+			location = this
 		}
-		last_created_army = { assign_leader = last_created_leader }
+
+		if = { limit = { has_global_flag = almighty_sofe }
+			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
+		} else = {
+			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
+		}
+	}
+}
+
+planet_event = {
+	id = sofe_crisis.13
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {	
+		save_global_event_target_as = wardenworldD
+		set_owner = event_target:sofe_crisis_country
+		create_point_of_interest = {
+			id = sofe_golden_world.4
+			name = sofe_golden_world.poi
+			event_chain = origin_crisis_chain
+			location = this
+		}
+
+		if = { limit = { has_global_flag = almighty_sofe }
+			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
+		} else = {
+			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
+		}
 	}
 }
 
@@ -1099,7 +1149,7 @@ planet_event = {
 
 	trigger = {
 		planet_devastation >= 100
-		FROM = { is_country_type = sbtg_stellarborne_empire }
+		from = { is_country_type = sbtg_stellarborne_empire }
 	}
 
 	immediate = {
@@ -1123,7 +1173,7 @@ planet_event = {
 			}
 		} else = {
 			reset_planet = yes
-		destroy_colony = yes
+			destroy_colony = yes
 			if = {
 				limit = { NOT = { has_modifier = natural_beauty }}
 				add_modifier = { modifier = natural_beauty }				
@@ -1187,7 +1237,7 @@ planet_event = {
 						is_planet_class = pc_shrouded
 					}
 					NOR = {
-						is_ringworld = yes
+						has_ringworld_output_boost = yes
 						habitable_structure = yes
 						is_planet_class = pc_golden_world_habitable
 						is_planet_class = pc_golden_world
@@ -1198,7 +1248,7 @@ planet_event = {
 			}
 			else = {
 				if = {
-					limit = { is_planet_class = pc_habitat }
+					limit = { merg_is_habitat = yes }
 					remove_planet = yes
 				}
 			}
@@ -1213,7 +1263,7 @@ planet_event = {
 		}
 		if = {
 			limit = { FROM = { is_country_type = sbtg_stellarborne_empire } }
-			every_country = {
+			every_playable_country = {
 				limit = { has_event_chain = "origin_crisis_chain" }
 				add_event_chain_counter = {
 					event_chain = "origin_crisis_chain"
@@ -1237,7 +1287,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = active_sofe_crisis
-		is_country_type = default
+		merg_is_default_empire = yes
 		is_subject = no
 		fleet_power <= 2000000 
 		exists = event_target:sofe_crisis_country
@@ -1365,7 +1415,7 @@ country_event = {
 						set_friendly = yes
 					}
 				}
-				every_country = {
+				every_playable_country = {
 					limit = { 
 						is_ai = no
 						has_communications = event_target:new_origin_protectorate
@@ -1402,7 +1452,7 @@ planet_event = {
 			limit = {
 				owner = {
 					if = { limit = { has_global_flag = almighty_sofe }
-						num_ships > 20000
+						num_ships > 2500
 					} else = {
 						num_ships > 4000
 					}
@@ -1434,7 +1484,7 @@ planet_event = {
 		# BOmbs away
 		else = {
 			if = { limit = { has_global_flag = almighty_sofe }
-				planet_event = { id = sofe_crisis.1301 days = 300 }
+				planet_event = { id = sofe_crisis.1301 days = 360 }
 			} else = {
 				planet_event = { id = sofe_crisis.1301 days = 3600 }
 			}
@@ -1459,20 +1509,20 @@ planet_event = {
 		if = {
 			limit = { has_global_flag = almighty_sofe }
 			if = {
-				limit = { has_global_flag = sofe_almighty_honorguard_fleets_only }
+				limit = { has_global_flag = anz_almighty_honorguard_fleets_only }
 				while = {
 					count = 5
 					create_almighty_honorguard = yes
 				}
 			} else_if = {
-				limit = { has_global_flag = sofe_almighty_heavy_fleets_only }
+				limit = { has_global_flag = anz_almighty_heavy_fleets_only }
 				while = {
-					count = 5
+					count = 3
 					create_almighty_heavy = yes
 				}
 			} else = {
 				while = {
-					count = 5
+					count = 2
 					create_almighty_scouts = yes
 				}
 			}
@@ -1510,14 +1560,36 @@ planet_event = {
 					}
 				}
 			}
-			planet_event = { id = sofe_crisis.1303 }		
+			if = {
+				limit = { has_global_flag = almighty_sofe }
+				every_country = {
+					create_message = {
+						type = TOAST_ALMIGHTY_COUNTERATTACK
+						localization =  TOAST_ALMIGHTY_COUNTERATTACK_DESC
+						days = @toast_message_days
+					}
+				}
+				every_system = {
+					limit = { has_star_flag = outercluster }
+					every_fleet_in_system = {
+						limit = { NOT = { is_owned_by = event_target:sofe_crisis_country } }
+						set_timed_fleet_flag = {
+							flag = anz_almighty_counterAttack_markedForKick
+							days = 31 # +1 from where the flag would be reset
+						}
+					}
+				}
+				planet_event = { id = sofe_crisis.1303 days = 30} # time to run
+			} else = {
+				planet_event = { id = sofe_crisis.1303 }
+			}			
 		}
 		else = {
 			if = {
 				limit = { has_global_flag = almighty_sofe }
 				planet_event = { id = sofe_crisis.1302 days = 30 }
 			} else = {
-				planet_event = { id = sofe_crisis.1302 days = 360 }		#Check Again
+				planet_event = { id = sofe_crisis.1302 days = 360 }		# Check Again
 			}
 		}
 	}
@@ -1541,7 +1613,50 @@ planet_event = {
 			}
 			while = {
 				count = 5
-				create_almighty_honorguard = yes
+				create_almighty_honorguard_counterAttack = yes
+			}
+			if = {
+				limit = {
+					any_system = {
+						has_star_flag = outercluster
+						any_fleet_in_system = {
+							has_fleet_flag = anz_almighty_counterAttack_markedForKick
+						}
+					}
+				}
+				every_system = {
+					limit = { has_star_flag = outercluster }
+					random_fleet_in_system = {
+						limit = { has_fleet_flag = anz_almighty_counterAttack_markedForKick }
+						save_event_target_as = anz_almighty_counterAttack_target
+					}
+				}
+				owner = { every_owned_fleet = {
+					limit = { has_fleet_flag = anz_almighty_honorguard_counterAttack }
+					clear_orders = yes
+					clear_fleet_actions = this
+					queue_actions = {
+						attack_fleet = {
+							target = event_target:anz_almighty_counterAttack_target
+						}
+					}
+				} }
+				planet_event = { id = sofe_crisis.1302 days = 0 }
+			} else = {
+				every_country = {
+					create_message = {
+						type = TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN
+						localization =  TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_DESC
+						days = @toast_message_days
+					}
+				}
+				owner = { every_owned_fleet = {
+					limit = { has_fleet_flag = anz_almighty_honorguard_counterAttack }
+					clear_orders = yes
+					clear_fleet_actions = this
+					acemod_set_fleet_piloted_exclusion_off = yes
+				} }
+				planet_event = { id = sofe_crisis.1302 days = 480 }
 			}
 		} else = {
 			create_origin_heavy_fleet = yes
@@ -1581,7 +1696,7 @@ country_event = {
 				has_global_flag = almighty_sofe
 			}
 			event_target:sofe_crisis_country = {
-				country_event = { id = sofe_crisis.99995 days = 0 }
+				country_event = { id = anz_almighty.13 days = 0 }
 			}
 		}
 		every_system = {
@@ -1590,7 +1705,7 @@ country_event = {
 					has_star_flag = outercluster_gate
 					if = { limit = { has_global_flag = almighty_sofe }
 						event_target:sofe_crisis_country = {
-							num_ships > 2500
+							num_ships > 3000
 						}
 					} else = {
 						event_target:sofe_crisis_country = {
@@ -1599,7 +1714,7 @@ country_event = {
 					}
 				}
 				any_system_megastructure = { 
-					is_megastructure_type = sofe_outer_gate
+					is_sbtg_outer_gate = yes
 				}
 				if = { limit = { has_global_flag = almighty_sofe }
 					# Ignore Ownership if Almighty and spawn anyways
@@ -1609,7 +1724,7 @@ country_event = {
 			}
 			random_system_megastructure = {
 				limit = {
-					is_megastructure_type = sofe_outer_gate
+					is_sbtg_outer_gate = yes
 				}
 				if = { # Almighty Redirect
 					limit = {
@@ -1638,28 +1753,25 @@ country_event = {
 								target = prev
 								distance = 0
 								angle = 0
-								}
 							}
 						}
 					}
 				}
-			}	
+			}
+		}
 		every_country = {
 			limit = {
 				is_ai =yes
-					OR = {
-						is_country_type = awakened_fallen_empire
-						is_country_type = fallen_empire						
-					}
-				}
+				is_fallen_empire = yes
+			}
 			# Gives AFE more resources
-				add_resource = {
-					minerals = 350000
-					energy = 350000
-					sr_dark_matter = 2500
-					acot_sr_dark_energy = 2500
-					alloys = 25000
-				}
+			add_resource = {
+				minerals = 350000
+				energy = 350000
+				sr_dark_matter = 2500
+				acot_sr_dark_energy = 2500
+				alloys = 25000
+			}
 			
 			# Add some more fleet for FEs
 			country_event = { id = sofe_crisis.1400 }
@@ -1688,16 +1800,16 @@ country_event = {
 			has_modifier = challenger_original	
 		}
 		OR = {
-			is_country_type = default
-			is_country_type = fallen_empire
+			merg_is_default_empire = yes
+			merg_is_fallen_empire = yes
 			is_country_type = ascended_empire
-			is_country_type = awakened_fallen_empire
-			#is_country_type = lost_empire
+			merg_is_awakened_fe = yes
+			# is_country_type = lost_empire
 			is_country_type = eternal_empire
 			is_country_type = sbtg_stellarborne_empire
 			is_country_type = sbtg_stellarborne_empire_active
 		}			
-		FROM = { 
+		from = { 
 			OR = {
 				has_technology = tech_dark_matter_power_core_oe
 				is_country_type = sbtg_stellarborne_empire
@@ -1712,761 +1824,152 @@ country_event = {
 		if = { limit = { has_global_flag = almighty_sofe }
 			if = { limit = { has_technology = tech_dark_matter_power_core_oe }
 				if = { limit = { fromfromfrom = { is_ship_size = precursor_escort } }
-					add_resource = { acot_sr_light_matter = 2000 }
-				} else_if = { limit = { fromfromfrom = { is_ship_size = precursor_battlecruiser } }
-					add_resource = { acot_sr_light_matter = 5000 }
-				} else_if = { limit = { fromfromfrom = { is_ship_size = precursor_titan } }
-					add_resource = { acot_sr_light_matter = 10000 }
-				} else_if = { limit = { fromfromfrom = { is_ship_size = origin_super_citadel } }
 					add_resource = { acot_sr_light_matter = 1000 }
+				} else_if = { limit = { fromfromfrom = { is_ship_size = precursor_battlecruiser } }
+					add_resource = { acot_sr_light_matter = 3000 }
+				} else_if = { limit = { fromfromfrom = { is_ship_size = precursor_titan } }
+					add_resource = { acot_sr_light_matter = 6000 }
+				} else_if = { limit = { fromfromfrom = { is_ship_size = origin_super_citadel } }
+					add_resource = { acot_sr_light_matter = 500 }
 				} else_if = { limit = { fromfromfrom = { is_ship_size = sofe_ancient_small_military_station } }
 					add_resource = { acot_sr_light_matter = 500 }
 				} else_if = { limit = { fromfromfrom = { is_ship_size = precursor_colossus } }
-					add_resource = { acot_sr_light_matter = 100000 }
+					add_resource = { acot_sr_light_matter = 10000 }
 				} else_if = { limit = { fromfromfrom = { is_ship_size = sofe_ancient_weapon } }
-					add_resource = { acot_sr_light_matter = 500000 }
+					add_resource = { acot_sr_light_matter = 100000 }
 				}
 			}
 		} else = {
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = progenitor_escort
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 500
-				}				 
+						acot_sr_light_matter = 500
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = progenitor_battlecruiser
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 1500
-				}				 
+						acot_sr_light_matter = 1500
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = progenitor_titan
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 3000
-				}				 
+						acot_sr_light_matter = 3000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = progenitor_avatar
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 6000
-				}				 
+						acot_sr_light_matter = 6000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = colossus
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 6000
-				}				 
+						acot_sr_light_matter = 6000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = origin_super_citadel
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 6000
-				}				 
+						acot_sr_light_matter = 6000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = sofe_ancient_small_military_station
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 3000
-				}				 
+						acot_sr_light_matter = 3000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = sofe_ancient_escort
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 12000
-				}				 
+						acot_sr_light_matter = 12000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = sofe_ancient_cruiser
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 24000
-				}				 
+						acot_sr_light_matter = 24000
+					}				 
 				}
 			}
 			if = {
 				limit = {
-					FROMFROMFROM = {
+					fromfromfrom = {
 						is_ship_size = sofe_ancient_weapon
 					}
 				}
 				if = {
 					limit = { 	has_technology = tech_dark_matter_power_core_oe }
 					add_resource = {
-					acot_sr_light_matter = 120000
-				}				 
-				}
-			}
-		}
-	}
-}
-
-# Arkship Lives Almighty
-ship_event = {
-	id = sofe_crisis.9007
-	hide_window = yes
-	
-	is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		is_ship_size = sofe_ancient_weapon
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				check_variable = {
-					which = arkship_life_count
-					value > 0
-				}
-			}
-			repair_ship = yes
-			set_disabled = no
-			subtract_variable = {
-				which = arkship_life_count
-				value = 1
-			}
-			every_country = {
-				limit = {
-					has_event_chain = "origin_crisis_chain"
-				}
-				add_event_chain_counter = {
-					event_chain = "origin_crisis_chain"
-					counter = almighty_sofe_arkship_lives
-					amount = -1
-				}
-			}
-			if = {
-				limit = {
-					check_variable = {
-						which = arkship_life_count
-						value < 2000
-					}
-				}
-				owner = {
-					every_owned_fleet = {
-						limit = {
-							is_in_combat = no
-							has_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
-							NOT = { has_fleet_flag = almighty_recently_recalled }
-						}
-						set_timed_fleet_flag = {
-							flag = almighty_recently_recalled
-							days = 200
-						}
-						set_location = event_target:star_heart
+						acot_sr_light_matter = 120000
 					}
 				}
 			}
-		} else = {
-			set_ship_flag = arkship_final_life
 		}
-	}
-}
-
-# Hostility
-country_event = {
-	id = sofe_crisis.99985
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		has_global_flag = active_sofe_crisis
-
-		is_same_empire = event_target:sofe_crisis_country
-	}
-
-	immediate = {
-		country_event = { id = sofe_crisis.99985 days = 360 }
-		
-		every_country = {
-			limit = {
-				NOT = { has_country_flag = paluush_primitives }
-			}
-			set_faction_hostility = {
-				target = prev
-				set_hostile = yes
-				set_neutral = no
-				set_friendly = no
-			}
-		}
-	}
-}
-
-# Bunny Jump
-country_event = {
-	id = sofe_crisis.99986
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		has_global_flag = active_sofe_crisis
-		has_global_flag = almighty_bunny_jump
-
-		is_same_empire = event_target:sofe_crisis_country
-	}
-
-	immediate = {
-		country_event = {
-			id = sofe_crisis.99986
-			days = 40
-		}
-
-		every_owned_fleet = {
-			limit = {
-				is_fleet_idle = yes
-				OR = {
-					has_fleet_flag = sofe_almighty_scouts
-					has_fleet_flag = sofe_almighty_heavy
-					has_fleet_flag = sofe_almighty_honorguard
-				}
-				NOT = { has_fleet_flag = acemod_sfex_fleet_flag_jumpdrive_windup }
-			}
-
-			if = { limit = { has_modifier = acemod_sfex_jump_drive_order_cooldown }
-				remove_modifier = acemod_sfex_jump_drive_order_cooldown			
-			}
-
-			random_system = {
-				limit = {
-					OR = {
-						NOT = { exists = owner }
-						AND = {
-							exists = owner
-							owner = {
-								if = {
-									limit = { has_global_flag = almighty_bunny_jump_exclude_player }
-									is_ai = yes
-								}
-								is_subject = no
-							}
-						}
-					}
-					any_fleet_in_system = {
-						owner = { NOT = { is_same_empire = event_target:sofe_crisis_country } }
-					}
-				}
-				save_event_target_as = anz_almighty_jumpdrive_target
-			}
-
-			# Execute order 66
-			acemod_sfex_set_fleet_order = {
-				ORDER = jumpdrive
-				TARGET = event_target:anz_almighty_jumpdrive_target
-				MODNAME = ANZ_ALMIGHTY_SB
-				JUMPDRIVE_CUSTOM_MAX_RANGE = 500
-				JUMPDRIVE_IGNORE_CAN_JUMP_DRIVE = yes
-				JUMPDRIVE_IGNORE_CAN_ENTER_SYSTEM_BY_JUMP = yes
-			}
-		}
-	}
-}
-
-# Delayed code execution
-country_event = {
-	id = sofe_crisis.99987
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		# every_owned_army = {
-		# 	remove_army = yes
-		# }
-	}
-}
-
-# Hostage Megas <3
-country_event = {
-	id = sofe_crisis.99988
-	hide_window = yes
-
-	mean_time_to_happen = {
-		months = 4
-	}
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		OR = {
-			has_global_flag = active_sofe_crisis
-			is_country_type = sbtg_stellarborne_empire
-			is_country_type = sbtg_stellarborne_empire_passive
-		}
-	}
-
-	immediate = {
-		every_owned_megastructure = {
-			limit = {
-				NOR = {
-					is_megastructure_type = sofe_outer_gate
-					is_megastructure_type = sofe_inner_gate
-				}
-			}
-			if = {
-				limit = {
-					exists = space_owner
-				}
-				set_owner = space_owner
-			}
-		}
-	}
-}
-
-# Bombardment Stance AI
-country_event = {
-	id = sofe_crisis.99989
-	hide_window = yes
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		has_global_flag = active_sofe_crisis
-
-		is_country_type = sbtg_stellarborne_empire
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	immediate = {
-		every_owned_fleet = {
-			set_fleet_bombardment_stance = hypernova
-		}
-	}
-}
-
-# Starbase Code
-country_event = {
-	id = sofe_crisis.99990
-	hide_window = yes
-
-	trigger = {
-		has_global_flag = almighty_sofe
-		has_global_flag = active_sofe_crisis
-
-		is_country_type = sbtg_stellarborne_empire
-	}
-
-	mean_time_to_happen = {
-		months = 6
-
-		modifier = {
-			factor = 0.7
-
-			has_global_flag = almighty_bunny_jump
-			NOT = { has_global_flag = almighty_bunny_jump_exclude_player }
-		}
-
-		# Rapid expand if player is dead
-		modifier = {
-			factor = 0.2
-			
-			if = {
-				limit = {
-					any_playable_country = {
-						is_ai = no
-					}
-				}
-				always = no
-			} else = {
-				always = yes
-			}
-		}
-	}
-
-	immediate = {
-		every_system = {
-			limit = {
-				OR = {
-					has_star_flag = outercluster_gate
-					has_star_flag = outercluster
-				}
-			}
-			star = {
-				create_almighty_citadel = yes
-			}
-		}
-
-		every_system_within_border = {
-			while = {
-				count = 4
-				every_neighbor_system = {
-					create_almighty_citadel = yes
-				}
-			}
-		}
-	}
-}
-
-# Heavy Fleet Flag
-country_event = {
-	id = sofe_crisis.99991
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = { NAND = {
-				has_global_flag = sofe_almighty_heavy_fleets_only
-				has_global_flag = sofe_almighty_honorguard_fleets_only
-			} }
-			every_owned_fleet = {
-				limit = {
-					has_fleet_flag = sofe_almighty_scouts
-				}
-				destroy_fleet = this
-			}
-			every_system = {
-				limit = {
-					has_star_flag = outercluster_gate
-					any_system_megastructure = {
-						is_megastructure_type = sofe_outer_gate
-					}
-				}
-				while = {
-					count = 10
-					create_almighty_heavy = yes
-				}
-			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				country_event = { id = sofe_crisis.99997 days = 0 }
-			}
-			set_global_flag = sofe_almighty_heavy_fleets_only
-		}
-	}
-}
-
-# Anti Blokkat AI
-country_event = {
-	id = sofe_crisis.99992
-	hide_window = yes
-
-	trigger = {
-		has_global_flag = active_sofe_crisis
-		has_global_flag = blokkat_crisis_ongoing
-		has_global_flag = almighty_sofe
-		is_country_type = sbtg_stellarborne_empire
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	immediate = {
-		random_system_within_border = {
-			while = {
-				count = 5
-				create_almighty_blokkats = yes
-			}
-		}
-
-		set_global_flag = blokkat_mothership_shield_down
-		every_system = {
-			limit = { has_modifier = blokkat_mothership_shield }
-			remove_modifier = blokkat_mothership_shield
-		}
-
-		every_owned_fleet = {
-			limit = {
-				has_fleet_flag = sofe_almighty_blokkat
-			}
-			set_location = {
-				target = event_target:current_blokkat_mothership_system
-				distance = 5
-    	        angle = random
-	            direction = in_system
-			}
-			clear_orders = yes
-	        clear_fleet_actions = this
-		}
-
-		country_event = { id = sofe_crisis.99993 days = 40 }
-	}
-}
-
-# Self-Destruct after timer and Reactivate Shield for them
-country_event = {
-	id = sofe_crisis.99993
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		remove_global_flag = blokkat_mothership_shield_down
-		every_owned_fleet = {
-			limit = {
-				has_fleet_flag = sofe_almighty_blokkat
-			}
-			destroy_fleet = this
-		}
-	}
-}
-
-# RNG Vester Encounter
-country_event = {
-	id = sofe_crisis.99994
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		has_global_flag = active_sofe_crisis
-		has_global_flag = blokkat_crisis_ongoing
-		has_global_flag = almighty_sofe
-		is_country_type = sbtg_stellarborne_empire
-		from = { is_country_type = blokkat_stripminers }
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				from = {
-					from = {
-						solar_system = {
-							NOT = { is_same_value = event_target:current_blokkat_mothership_system }
-						}
-					}
-				}
-			}
-			break = yes
-		}
-		set_global_flag = blokkat_mothership_shield_down
-		every_system = {
-			limit = { has_modifier = blokkat_mothership_shield }
-			remove_modifier = blokkat_mothership_shield
-		}
-
-		country_event = { id = sofe_crisis.99993 days = 30 }
-	}
-}
-
-# Honorguard Fleet Flag
-country_event = {
-	id = sofe_crisis.99995
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		if = {
-			limit = {
-				NOT = { has_global_flag = sofe_almighty_honorguard_fleets_only }
-			}
-			every_owned_fleet = {
-				limit = {
-					has_fleet_flag = sofe_almighty_scouts
-				}
-				destroy_fleet = this
-			}
-			every_owned_fleet = {
-				limit = {
-					has_fleet_flag = sofe_almighty_heavy
-				}
-				destroy_fleet = this
-			}
-			every_system = {
-				limit = {
-					has_star_flag = outercluster_gate
-					any_system_megastructure = {
-						is_megastructure_type = sofe_outer_gate
-					}
-				}
-				while = {
-					count = 10
-					create_almighty_honorguard = yes
-				}
-			}
-			every_country = {
-				limit = {
-					is_ai = no
-				}
-				country_event = { id = sofe_crisis.99997 days = 0 }
-			}
-			set_global_flag = sofe_almighty_honorguard_fleets_only
-			remove_global_flag = sofe_almighty_heavy_fleets_only
-		}
-	}
-}
-
-# Auto Escalation based on kills
-country_event = {
-	id = sofe_crisis.99996
-	hide_window = yes
-	
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	trigger = {
-		has_global_flag = active_sofe_crisis
-		has_global_flag = almighty_sofe
-		is_country_type = sbtg_stellarborne_empire
-		NOT = { has_global_flag = sofe_almighty_honorguard_fleets_only }
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				has_global_flag = sofe_almighty_heavy_fleets_only
-				NOT = { has_global_flag = sofe_almighty_honorguard_fleets_only }
-			}
-			if = {
-				limit = { check_variable = {
-					which = origin_fleet_kills
-					value > 80
-				} }
-				country_event = { id = sofe_crisis.99995 days = 0 } # Honorguard
-			}
-		} else_if = {
-			limit = {
-				NOR = {
-					has_global_flag = sofe_almighty_heavy_fleets_only
-					has_global_flag = sofe_almighty_honorguard_fleets_only
-				}
-			}
-			if = {
-				limit = { check_variable = {
-					which = origin_fleet_kills
-					value > 40
-				} }
-				country_event = { id = sofe_crisis.99991 days = 0 } # Heavy
-			}
-		}
-	}
-}
-
-# Notify about Escalation
-country_event = {
-	id = sofe_crisis.99997
-	is_triggered_only = yes
-
-	title = sofe_crisis.99997.title
-	desc = sofe_crisis.99997.desc
-	picture = GFX_evt_sofe_menu_difficulty
-
-	option = {
-		name = sofe_crisis.99997.a
-	}
-}
-
-# Apply NANI Modifier to newborn countries
-country_event = {
-	id = sofe_crisis.99998
-	hide_window = yes
-
-	mean_time_to_happen = {
-		months = 2
-	}
-
-	trigger = {
-		NOT = { is_country_type = sbtg_stellarborne_empire }
-		has_global_flag = almighty_sofe
-		has_global_flag = almighty_nani
-		NOT = {
-			has_modifier = sofe_almighty_nerfed
-		}
-	}
-
-	immediate = {
-		add_modifier = {
-			modifier = sofe_almighty_nerfed
-			months = 12
-		}
-	}
-}
-
-# NANI
-country_event = {
-	id = sofe_crisis.99999
-	is_triggered_only = yes
-
-	title = sofe_crisis.99999.title
-	desc = sofe_crisis.99999.desc
-	picture = GFX_evt_sofe_menu_difficulty
-
-	option = {
-		name = sofe_crisis.99999.a
-	}
-}
-
-# Bunny Jump
-country_event = {
-	id = sofe_crisis.100000
-	is_triggered_only = yes
-
-	title = sofe_crisis.100000.title
-	desc = sofe_crisis.100000.desc
-	picture = GFX_evt_sofe_menu_difficulty
-
-	options = {
-		name = sofe_crisis.100000.a
 	}
 }

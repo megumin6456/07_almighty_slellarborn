@@ -7,8 +7,7 @@ country_event = {
 	desc = {
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -18,13 +17,8 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
-			}
-			NOT = {
-				has_global_flag = almighty_sofe
-			}
+			is_fallen_empire = yes
+			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = sofe_crisis.15.1.desc.fallen
 	}
@@ -33,18 +27,14 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = {
-				has_global_flag = almighty_sofe
-			}
+			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = sofe_crisis.15.1.desc.eternal
 	}
 	desc = {
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = {
-				has_global_flag = almighty_sofe
-			}
+			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = sofe_crisis.15.1.desc.oe
 	}
@@ -86,8 +76,7 @@ country_event = {
 		name = sofe_crisis.15.a
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -100,8 +89,7 @@ country_event = {
 		name = sofe_crisis.15.b
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -114,8 +102,7 @@ country_event = {
 		name = sofe_crisis.15.c
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -128,8 +115,7 @@ country_event = {
 		name = sofe_crisis.15.d
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -142,8 +128,7 @@ country_event = {
 		name = sofe_crisis.15.e
 		trigger = {
 			NOR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
 				has_global_flag = almighty_sofe
@@ -155,10 +140,7 @@ country_event = {
 	option = {
 		name = sofe_crisis.15.fallen.a
 		trigger = {
-			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		response_text = sofe_crisis.15.fallen.a.response
@@ -167,10 +149,7 @@ country_event = {
 	option = {
 		name = sofe_crisis.15.fallen.b
 		trigger = {
-			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		response_text = sofe_crisis.15.fallen.b.response
@@ -179,10 +158,7 @@ country_event = {
 	option = {
 		name = sofe_crisis.15.fallen.c
 		trigger = {
-			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		response_text = sofe_crisis.15.fallen.c.response
@@ -192,10 +168,7 @@ country_event = {
 		name = sofe_crisis.15.fallen.d
 		response_text = sofe_crisis.15.fallen.d.response
 		trigger = {
-			OR = {
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		default_hide_option = yes
@@ -297,7 +270,7 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
@@ -316,12 +289,12 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 		
+				any_agreement = { agreement_preset = sbtg_preset_timeout }	
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -335,12 +308,12 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -354,12 +327,12 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -373,12 +346,12 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -392,12 +365,12 @@ country_event = {
 	desc = {
 		trigger = { 
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire		
 				is_country_type = lost_empire	
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -438,30 +411,21 @@ country_event = {
 	}
 	desc = {
 		trigger = { 
-			OR = {
-				is_country_type = fallen_empire 
-				is_country_type = awakened_fallen_empire 				
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = "sofe_crisis.550.fallen.a.desc"
 	}
 	desc = {
 		trigger = { 
-			OR = {
-				is_country_type = fallen_empire 
-				is_country_type = awakened_fallen_empire 				
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = "sofe_crisis.550.fallen.b.desc"
 	}
 	desc = {
 		trigger = { 
-			OR = {
-				is_country_type = fallen_empire 
-				is_country_type = awakened_fallen_empire 				
-			}
+			is_fallen_empire = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = "sofe_crisis.550.fallen.c.desc"
@@ -515,32 +479,36 @@ country_event = {
 		text = "sofe_crisis.550.eternal.f.desc"
 	}
 	desc = {
-		trigger = { has_country_flag = rebelling_protectorate
-		NOT = { has_global_flag = almighty_sofe } }
+		trigger = {
+			has_country_flag = rebelling_protectorate
+			NOT = { has_global_flag = almighty_sofe }
+		}
 		text = "sofe_crisis.550.r.desc"
 	}
 	desc = {
-		trigger = { has_country_flag = rebelling_protectorate
-		NOT = { has_global_flag = almighty_sofe } }
+		trigger = {
+			has_country_flag = rebelling_protectorate
+			NOT = { has_global_flag = almighty_sofe }
+		}
 		text = "sofe_crisis.550.s.desc"
 	}
 	desc = {
-		trigger = { has_country_flag = rebelling_protectorate
-		NOT = { has_global_flag = almighty_sofe } }
+		trigger = {
+			has_country_flag = rebelling_protectorate
+			NOT = { has_global_flag = almighty_sofe }
+		}
 		text = "sofe_crisis.550.t.desc"
 	}
 	desc = {
-		trigger = { has_country_flag = rebelling_protectorate
-		NOT = { has_global_flag = almighty_sofe } }
+		trigger = {
+			has_country_flag = rebelling_protectorate
+			NOT = { has_global_flag = almighty_sofe }
+		}
 		text = "sofe_crisis.550.u.desc"
 	}
 	desc = {
 		trigger = {
-			OR = {
-				has_valid_civic = "civic_fanatic_purifiers"
-				has_valid_civic = "civic_hive_devouring_swarm"
-				has_valid_civic = "civic_machine_terminator"
-			}
+			is_homicidal = yes
 			NOT = { has_global_flag = almighty_sofe }
 		}
 		text = "sofe_crisis.550.v.desc"
@@ -582,6 +550,8 @@ country_event = {
 		}
 		text = sofe_crisis.550.playoe.a.desc
 	}
+
+	# begin almighty exclusive
 	desc = {
 		trigger = {
 			has_global_flag = almighty_sofe
@@ -651,6 +621,8 @@ country_event = {
 		}
 		text = sofe_crisis.550.almighty.k.desc
 	}
+
+	# end almighty exclusive
 	
 	picture_event_data = {
 		portrait = event_target:sofe_crisis_country
@@ -682,12 +654,12 @@ country_event = {
 		name = sofe_crisis.550.a
 		trigger = {
 			OR = {
-				is_country_type = default
+				merg_is_default_empire = yes
 				is_country_type = ascended_empire
 				is_country_type = lost_empire
 			}
 			NOR = { 
-				any_agreement = { agreement_preset = sbtg_preset_timeout } 
+				any_agreement = { agreement_preset = sbtg_preset_timeout }
 				has_country_flag = rebelling_protectorate
 				has_valid_civic = "civic_fanatic_purifiers"
 				has_valid_civic = "civic_hive_devouring_swarm"
@@ -740,8 +712,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire
+				is_fallen_empire = yes
 				has_global_flag = almighty_sofe
 			}
 		}
@@ -775,8 +746,7 @@ country_event = {
 		name = sofe_crisis.550.ask_fallen_gone
 		trigger = {
 			NOR = { 
-				is_country_type = fallen_empire
-				is_country_type = awakened_fallen_empire	
+				is_fallen_empire = yes	
 				is_country_type = eternal_empire			
 				has_country_flag = asked_about_fallengone
 				has_valid_civic = "civic_fanatic_purifiers"
@@ -787,10 +757,7 @@ country_event = {
 			}
 			NOT = {
 				any_country = {
-					OR = {
-						is_country_type = fallen_empire
-						is_country_type = awakened_fallen_empire					
-					}
+					is_fallen_empire = yes
 				}
 			}
 		}
@@ -816,6 +783,8 @@ country_event = {
 			country_event = { id = sofe_crisis.607 }
 		}
 	}
+
+	# begin almighty exclusive
 
 	option = {
 		trigger = {
@@ -843,8 +812,8 @@ country_event = {
 		trigger = {
 			has_global_flag = almighty_sofe
 			NOR = {
-				has_global_flag = sofe_almighty_heavy_fleets_only
-				has_global_flag = sofe_almighty_honorguard_fleets_only
+				has_global_flag = anz_almighty_heavy_fleets_only
+				has_global_flag = anz_almighty_honorguard_fleets_only
 			}
 			is_ai = no
 		}
@@ -854,7 +823,7 @@ country_event = {
 
 		hidden_effect = {
 			event_target:sofe_crisis_country = {
-				country_event = { id = sofe_crisis.99991 days = 0 }
+				country_event = { id = anz_almighty.9 days = 0 }
 			}
 		}
 	}
@@ -863,7 +832,7 @@ country_event = {
 		trigger = {
 			has_global_flag = almighty_sofe
 			is_ai = no
-			NOT = { has_global_flag = sofe_almighty_honorguard_fleets_only }
+			NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
 		}
 		name = sofe_crisis.15.550.almighty.c
 		custom_tooltip = sofe_crisis.15.550.almighty.b.tooltip
@@ -871,7 +840,7 @@ country_event = {
 
 		hidden_effect = {
 			event_target:sofe_crisis_country = {
-				country_event = { id = sofe_crisis.99995 days = 0 }
+				country_event = { id = anz_almighty.13 days = 0 }
 			}
 		}
 	}
@@ -879,7 +848,7 @@ country_event = {
 	option = {
 		trigger = {
 			has_global_flag = almighty_sofe
-			# has_global_flag = sofe_almighty_honorguard_fleets_only
+			# has_global_flag = anz_almighty_honorguard_fleets_only
 			is_ai = no
 			NOT = { has_global_flag = almighty_nani }
 		}
@@ -894,14 +863,14 @@ country_event = {
 					is_progenitor_empires = no
 				}
 				add_modifier = {
-					modifier = sofe_almighty_nerfed
+					modifier = anz_almighty_nerfed
 					months = 12
 				}
-				country_event = { id = sofe_crisis.99999 days = 0 }
+				country_event = { id = anz_almighty.17 days = 0 }
 			}
 			event_target:sofe_crisis_country = {
 				add_modifier = {
-					modifier = sofe_almighty_buffed
+					modifier = anz_almighty_buffed
 					days = -1
 				}
 			}
@@ -950,10 +919,11 @@ country_event = {
 				set_country_flag = acemod_sfex_jumpdrive_order_country_flag_ignore_has_ftl_drive
 			}
 			every_country = {
-				country_event = { id = sofe_crisis.100000 days = 0 }
+				country_event = { id = sanz_almighty.18 days = 0 }
 			}
 		}
 	}
+	# end almighty exclusive
 
 	option = {
 		name = sofe_crisis.20.e

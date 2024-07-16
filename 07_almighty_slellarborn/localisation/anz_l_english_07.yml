@@ -6,45 +6,70 @@ sofe_options.104.f.desc: "Current Difficulty: §YALMIGHTY§!\n\n§YSTELLARBORNE 
 sofe_options.nochangeaftercrisis: "Bit too late to change your mind now"
 
 # Modifiers
-sofe_almighty_nerfed: "§Y:3§!"
-sofe_almighty_nerfed_desc: "Naaaaaniiii???"
-sofe_almighty_buffed: "§Y^^§!"
-sofe_almighty_buffed_desc: "§YOH MY STARS§!"
+anz_almighty_nerfed: "§Y:3§!"
+anz_almighty_nerfed_desc: "Naaaaaniiii???"
+anz_almighty_buffed: "§Y^^§!"
+anz_almighty_buffed_desc: "§YOH MY STARS§!"
 sofe_arkship_buff: "§MAXIMUM POWERRRR§!"
 sofe_arkship_buff_desc: "§YJNGTEHOIJHDSIUHSDAOFSUHUJ§!"
 mod_damage_vs_country_type_sbtg_stellarborne_empire_mult: "Damage vs Stellarborne"
 almighty_sofe_arkship_lives: "Arkship Lives (only for Almighty difficulty)"
 
+# Toasts
+TOAST_ALMIGHTY_MASS_RECALL_TITLE: "§RWARNING:§! MASS RECALL!"
+TOAST_ALMIGHTY_MASS_RECALL_DESC: "Whenever Arkship takes damage, all Stellarborn ships gets recalled."
+
+TOAST_ALMIGHTY_COUNTERATTACK_TITLE: "§RWARNING:§! COUNTER ATTACK!"
+TOAST_ALMIGHTY_COUNTERATTACK_DESC: "Outsider have entered the Outercluster, Stellarborn counterattack every 30 days."
+
+TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_TITLE: "§BCOOLDOWN:§! Counter attack."
+TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_DESC: "Stellarborn counter attack entered cooldown for 480 days."
+
 # Weapon Names
-ACOT_FLAGSHIP_RADEXP: "§YRADIANT  EXPLOSIONS§!"
-ACOT_FLAGSHIP_RADEXP_DESC: "§YGot a problem in life? Just blow it up! Sure it won't solve anything but sure will ERASE it. That's why I always carry a friendly pet NUKE with me o^o§!"
+ANZ_ALMIGHTY_RADEXP: "§YRADIANT  EXPLOSIONS§!"
+ANZ_ALMIGHTY_RADEXP_DESC: "§YGot a problem in life? Just blow it up! Sure it won't solve anything but sure will ERASE it. That's why I always carry a friendly pet NUKE with me!§!"
+
+# Ship Sections
+ALMIGHTY_FLOWING_ESCORT_BOW_KEY: "Wishing Star"
+ALMIGHTY_FLOWING_ESCORT_MID_KEY: "Fledgling Starlings"
+ALMIGHTY_FLOWING_BATTLECRUISER_BOW_KEY: "Solarian Hypercore"
+ALMIGHTY_FLOWING_BATTLECRUISER_MID_KEY: "Lightforged Eversword"
+ALMIGHTY_FLOWING_TITAN_BOW_KEY: "Luminous Nucleus"
+ALMIGHTY_FLOWING_TITAN_MID_KEY: "Trismegistus Starbender"
+ALMIGHTY_FLOWING_HERC_CORE_KEY: "15 Sentinels"
+ALMIGHTY_FLOWING_CITIDEL_KEY: "Blaze Luminous"
+ALMIGHTY_FLOWING_TOWER_KEY: "FLEIJA Launcher"
+ALMIGHTY_FLOWING_GAIA: "Heaven's Strike"
+ALMIGHTY_FLOWING_QUASAR: "Lore Accurate Anti-Cheat"
 
 # Ship Names
-NAME_ALMIGHTY_ESCORT: "Coastal Wayfinders"
-NAME_ALMIGHTY_BATTLECRUISER: "Swords of Solaria"
-NAME_ALMIGHTY_TITAN: "Shimmering Butterflies"
-NAME_ALMIGHTY_HERCS: "Memories of Suriya"
-NAME_ALMIGHTY_CITIDEL: "Avatars of Megumin"
-NAME_ALMIGHTY_TOWER: "Avatars of Speedwagon"
-NAME_ALMIGHTY_GAIA: "Arkship Ultimate Kars"
+ANZ_ALMIGHTY_ESCORT: "Coastal Wayfinders"
+ANZ_ALMIGHTY_BATTLECRUISER: "Swords of Solaria"
+ANZ_ALMIGHTY_TITAN: "Shimmering Butterflies"
+ANZ_ALMIGHTY_HERCS: "Memories of Suriya"
+ANZ_ALMIGHTY_CITIDEL: "Blaze Luminous"
+ANZ_ALMIGHTY_TOWER: "FLEIJA Launcher"
+ANZ_ALMIGHTY_GAIA: "Arkship Ultimate Kars"
+ANZ_ALMIGHTY_QUASAR: "Inevitable Destiny"
 
 # Fleet Names
-NAME_ALMIGHTY_SCOUTS: "Lightbound Navigators"
-NAME_ALMIGHTY_HEAVY: "Solarian Monster Slayers"
-NAME_ALMIGHTY_HONORGUARD: "Maruvian Honor Guards"
-NAME_ALMIGHTY_GARRISON: "Anzion Void Masters"
-NAME_ALMIGHTY_GARRISON_OUTSIDE: "Vigilant Nightwatch"
-NAME_ALMIGHTY_BLOKKATS: "Menla Blokkat Hunters"
-NAME_ALMIGHTY_ARKSHIP: "Everlasting Glory"
+ANZ_ALMIGHTY_SCOUTS: "Lightbound Navigators"
+ANZ_ALMIGHTY_HEAVY: "Solarian Monster Slayers"
+ANZ_ALMIGHTY_HONORGUARD: "Maruvian Honor Guards"
+ANZ_ALMIGHTY_GARRISON: "Anzion Void Masters"
+ANZ_ALMIGHTY_GARRISON_OUTSIDE: "Vigilant Nightwatch"
+ANZ_ALMIGHTY_BLOKKATS: "Menla Blokkat Hunters"
+ANZ_ALMIGHTY_ARKSHIP: "Everlasting Glory"
+ANZ_ALMIGHTY_QUASARCRAFT: "Judgement: Death Sentence"
 
 # Megumin
-NAME_MEGUMIN: "Ascended Megumin"
+ANZ_ALMIGHTY_MEGUMIN: "Ascended Megumin"
 leader_trait_admiral_megumin_oe: "§YRadient Explosions§!"
 leader_trait_admiral_megumin_oe_desc: "§YThe Ultimate Master of Detonation Magic, any ship that dare to cross her way will learn the true explosive power of flowing light!§!"
 leader_trait_governor_megumin_oe: "§YRimworld Addict§!"
 leader_trait_governor_megumin_oe_desc: "§YLoves to play colony management sims way past what any sane being would. Have a tendency to randomly blow things up when they feel down.§!"
 leader_trait_general_megumin_oe: "§YCrimson Mage§!"
-leader_trait_general_megumin_oe_desc: "$ACOT_FLAGSHIP_RADEXP_DESC$"
+leader_trait_general_megumin_oe_desc: "$ANZ_ALMIGHTY_RADEXP_DESC$"
 
 # Bombarment Stance
 bombardment_hypernova: "§YHYPERNOVA§!"
@@ -56,7 +81,7 @@ anz_almighty_autarch_desc: "§WThose who trespass will be crushed by blinding li
 anz_almighty_autarch_name: "§YDivine Spirit§!"
 
 # Diplomacy / Dialogs
-NAME_ALMIGHTY_STELLARBORNE: "ALMIGHTY STELLARBORNE"
+ANZ_ALMIGHTY_STELLARBORNE: "ALMIGHTY STELLARBORNE"
 
 sofe_crisis.15.1.desc.almighty: "Sapient beings of this galaxy, pay attention for the §YStellarborn§! is here! We are the §YFirst Born of the Stars§!, representing the §YOrder of Light§!. Prepare thy worst for we shall show no quarter,\n\n§YAUS: JAWHOL§!"
 
@@ -104,14 +129,14 @@ sofe_crisis.550.almighty.i.desc: "§YBUNNY JUMP! BUNNY JUMP!\nBUNNY HOP! BUNNY H
 sofe_crisis.550.almighty.j.desc: "§YHEEE HOOO! HEE HOOO!§!"
 sofe_crisis.550.almighty.k.desc: "§YWAR LIKE A PARTY!§!"
 
-sofe_crisis.99997.title: "§YESCALATION§!"
-sofe_crisis.99997.desc: "The §YStellarborne§! has escalated their armadas to another varient!\nSuffice to say, these new fleets are bound to be stronger than the last."
-sofe_crisis.99997.a: "Close"
+anz_almighty.15.title: "§YESCALATION§!"
+anz_almighty.15.desc: "The §YStellarborne§! has escalated their armadas to another varient!\nSuffice to say, these new fleets are bound to be stronger than the last."
+anz_almighty.15.a: "Close"
 
-sofe_crisis.99999.title: "§YOMAE WA MOU SHINDEIRU§!"
-sofe_crisis.99999.desc: "§RONE SENTENCE ECHOS IN OUR MINDS, IT SCREAMS THROUGH THE VOID\nENEMY POWER LEVEL ARE RISING OFF THE CHARTS, IT'S OVER 9 BILLION!!!§!"
-sofe_crisis.99999.a: "§RSOMEONE AGITATED THEM, NOW WE DIE§!"
+anz_almighty.17.title: "§YOMAE WA MOU SHINDEIRU§!"
+anz_almighty.17.desc: "§RONE SENTENCE ECHOS IN OUR MINDS, IT SCREAMS THROUGH THE VOID\nENEMY POWER LEVEL ARE RISING OFF THE CHARTS, IT'S OVER 9 BILLION!!!§!"
+anz_almighty.17.a: "§RSOMEONE AGITATED THEM, NOW WE DIE§!"
 
-sofe_crisis.100000.title: "§YJUMP DRIVES?§!"
-sofe_crisis.100000.desc: "It seems someone has \"Requested\" the §YStellarborne§! to start switch up their stratergies. They seems to now be using §YJump Drives§!! Worse their fleet movements are getting more cordinated by the minute making them group up as they expand their space.\n\nThey promised to not jump into player controlled space for the next §R6 years§!, we better finish this up fast before... well, you know the time is up when you are dying."
-sofe_crisis.100000.a: "Chaos Incarnate, so this is how we die."
+sanz_almighty.18.title: "§YJUMP DRIVES?§!"
+sanz_almighty.18.desc: "It seems someone has \"Requested\" the §YStellarborne§! to start switch up their stratergies. They seems to now be using §YJump Drives§!! Worse their fleet movements are getting more cordinated by the minute making them group up as they expand their space.\n\nThey promised to not jump into player controlled space for the next §R6 years§!, we better finish this up fast before... well, you know the time is up when you are dying."
+sanz_almighty.18.a: "Chaos Incarnate, so this is how we die."

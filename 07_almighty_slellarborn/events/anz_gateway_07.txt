@@ -1,44 +1,8 @@
-namespace = sofe_gateway
-
-## EE Imported Code
-country_event = {
-	id = sofe_gateway.6
-	hide_window = yes
-	
-	mean_time_to_happen = {
-		months = 2
-	}
-
-	trigger = {
-		is_ai = no ## Step away you dummy!
-		NOT = { 
-			has_global_flag = outer_cluster_opened 	
-		}
-		has_global_flag = sofe_shield_weaken
-		any_owned_megastructure = {
-			is_megastructure_type = sofe_outer_gate
-		}
-		NOT = {
-			has_country_flag = outer_gate_research_began
-		}
-	}
-
-	immediate = {
-		set_country_flag = outer_gate_research_began
-		random_owned_megastructure = {
-			limit = {
-				is_megastructure_type = sofe_outer_gate
-			}
-			save_event_target_as = candidate_outergateway
-		}
-		country_event = { id = sofe_gateway.601 } # enable project	
-	}
-}
-## END OF IMPORT
+namespace = anz_almighty
 
 # Summon at 2500
 country_event = {
-	id = sofe_gateway.990
+	id = anz_almighty.1
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -58,7 +22,7 @@ country_event = {
 		set_global_flag = outer_cluster_opened
 		every_megastructure = {
 			limit = {
-				is_megastructure_type = sofe_outer_gate
+				is_sbtg_outer_gate = yes
 			}
 			activate_gateway = this
 		}
@@ -76,6 +40,35 @@ country_event = {
 		}
 		every_playable_country = {
 			country_event = { id = sofe_gateway.202 }
+		}
+		##### REMOVE PHANON THEY GO BYE BYE - Need Actual Rewrite Later
+		set_global_flag = acot_phanon_forbidden
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = acot_phanon_base
+					is_country_type = acot_phanon_retaliator
+					is_same_value = event_target:phanon_base_country
+				}
+			}
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			destroy_country = yes
+		}
+		every_system = {
+			limit = {
+				has_star_flag = phanon_home_base
+			}
+			every_system_planet = {
+				limit = {
+					is_star = no
+				}
+				remove_planet = yes
+			}
+			every_system_megastructure = {
+				delete_megastructure = this
+			}
 		}
 	}
 }

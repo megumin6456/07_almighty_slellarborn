@@ -1,0 +1,38 @@
+message_type = {
+	key = "TOAST_ALMIGHTY_MASS_RECALL"
+	name = "TOAST_ALMIGHTY_MASS_RECALL_TITLE"
+	icon = GFX_message_declare_war
+
+	sound = notification_hostile_fleet
+
+	default_toast = yes
+	hidden_in_message_settings = yes
+
+	category = military
+}
+
+message_type = {
+	key = "TOAST_ALMIGHTY_COUNTERATTACK"
+	name = "TOAST_ALMIGHTY_COUNTERATTACK_TITLE"
+	icon = GFX_message_declare_war
+
+	sound = notification_hostile_fleet
+
+	default_toast = yes
+	hidden_in_message_settings = yes
+
+	category = military
+}
+
+message_type = {
+	key = "TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN"
+	name = "TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_TITLE"
+	icon = GFX_message_declare_war
+
+	sound = notification_hostile_fleet
+
+	default_toast = yes
+	hidden_in_message_settings = yes
+
+	category = military
+}

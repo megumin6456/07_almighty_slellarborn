@@ -28,10 +28,10 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_fleet_order_button_ground_support_hypernova"
-			texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_oe_nova_action.dds"
-			effectFile = "gfx/FX/buttonstate.lua"
-			noOfFrames = 3
-			animation = {
+		texturefile = "gfx/interface/fleet_view/fleet_task_ground_support_oe_nova_action.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		noOfFrames = 3
+		animation = {
 			animationmaskfile = "gfx/interface/fleet_view/fleet_task_button_mask.dds"
 			animationtexturefile = "gfx/interface/fleet_view/action_button_texture.dds"
 			animationrotation = 180.0

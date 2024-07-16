@@ -1,0 +1,623 @@
+namespace = anz_almighty
+
+# Arkship Lives Almighty
+ship_event = {
+	id = anz_almighty.2
+	hide_window = yes
+	
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		is_ship_size = sofe_ancient_weapon
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = {
+					which = arkship_life_count
+					value > 0
+				}
+			}
+			repair_ship = yes
+			set_disabled = no
+			subtract_variable = {
+				which = arkship_life_count
+				value = 1
+			}
+			every_country = {
+				limit = {
+					has_event_chain = "origin_crisis_chain"
+				}
+				add_event_chain_counter = {
+					event_chain = "origin_crisis_chain"
+					counter = almighty_sofe_arkship_lives
+					amount = -1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = arkship_life_count
+						value < 2000
+					}
+				}
+				if = {
+					limit = {
+						NOT = { has_global_flag = almighty_mass_recall_warned }
+					}
+					set_global_flag = almighty_mass_recall_warned
+					every_country = {
+						create_message = {
+							type = TOAST_ALMIGHTY_MASS_RECALL
+							localization =  TOAST_ALMIGHTY_MASS_RECALL_DESC
+							days = @toast_message_days
+						}
+					}
+				}
+				owner = {
+					every_owned_fleet = {
+						limit = {
+							is_in_combat = no
+							# has_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
+							NOT = { has_fleet_flag = almighty_recently_recalled }
+						}
+						set_timed_fleet_flag = {
+							flag = almighty_recently_recalled
+							days = 4
+						}
+						set_location = event_target:star_heart
+					}
+				}
+			}
+		} else = {
+			set_ship_flag = arkship_final_life
+		}
+	}
+}
+
+# Hostility
+country_event = {
+	id = anz_almighty.3
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		has_global_flag = active_sofe_crisis
+
+		is_same_empire = event_target:sofe_crisis_country
+	}
+
+	immediate = {
+		country_event = { id = anz_almighty.3 days = 360 }
+		
+		every_country = {
+			limit = {
+				NOT = { has_country_flag = paluush_primitives }
+			}
+			set_faction_hostility = {
+				target = prev
+				set_hostile = yes
+				set_neutral = no
+				set_friendly = no
+			}
+		}
+	}
+}
+
+# Bunny Jump
+country_event = {
+	id = anz_almighty.4
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		has_global_flag = active_sofe_crisis
+		has_global_flag = almighty_bunny_jump
+
+		is_same_empire = event_target:sofe_crisis_country
+	}
+
+	immediate = {
+		country_event = {
+			id = anz_almighty.4
+			days = 40
+		}
+
+		every_owned_fleet = {
+			limit = {
+				is_fleet_idle = yes
+				OR = {
+					has_fleet_flag = anz_almighty_scouts
+					has_fleet_flag = anz_almighty_heavy
+					has_fleet_flag = anz_almighty_honorguard
+				}
+				NOT = { has_fleet_flag = acemod_sfex_fleet_flag_jumpdrive_windup }
+			}
+
+			if = { limit = { has_modifier = acemod_sfex_jump_drive_order_cooldown }
+				remove_modifier = acemod_sfex_jump_drive_order_cooldown			
+			}
+
+			random_system = {
+				limit = {
+					OR = {
+						NOT = { exists = owner }
+						AND = {
+							exists = owner
+							owner = {
+								if = {
+									limit = { has_global_flag = almighty_bunny_jump_exclude_player }
+									is_ai = yes
+								}
+								is_subject = no
+							}
+						}
+					}
+					any_fleet_in_system = {
+						owner = { NOT = { is_same_empire = event_target:sofe_crisis_country } }
+					}
+				}
+				save_event_target_as = anz_almighty_jumpdrive_target
+			}
+
+			# Execute order 66
+			acemod_sfex_set_fleet_order = {
+				ORDER = jumpdrive
+				TARGET = event_target:anz_almighty_jumpdrive_target
+				MODNAME = ANZ_ALMIGHTY_SB
+				JUMPDRIVE_CUSTOM_MAX_RANGE = 500
+				JUMPDRIVE_IGNORE_CAN_JUMP_DRIVE = yes
+				JUMPDRIVE_IGNORE_CAN_ENTER_SYSTEM_BY_JUMP = yes
+			}
+		}
+	}
+}
+
+# Delayed code execution
+country_event = {
+	id = anz_almighty.5
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		# every_owned_army = {
+		# 	remove_army = yes
+		# }
+	}
+}
+
+# Hostage Megas <3
+country_event = {
+	id = anz_almighty.6
+	hide_window = yes
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		OR = {
+			has_global_flag = active_sofe_crisis
+			is_country_type = sbtg_stellarborne_empire
+			is_country_type = sbtg_stellarborne_empire_passive
+		}
+	}
+
+	immediate = {
+		every_owned_megastructure = {
+			limit = {
+				NOR = {
+					is_megastructure_type = sofe_outer_gate
+					is_megastructure_type = sofe_inner_gate
+				}
+			}
+			if = {
+				limit = {
+					exists = space_owner
+				}
+				set_owner = space_owner
+			}
+		}
+	}
+}
+
+# Bombardment Stance AI
+country_event = {
+	id = anz_almighty.7
+	hide_window = yes
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		has_global_flag = active_sofe_crisis
+
+		is_country_type = sbtg_stellarborne_empire
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		every_owned_fleet = {
+			set_fleet_bombardment_stance = hypernova
+		}
+	}
+}
+
+# Starbase Code
+country_event = {
+	id = anz_almighty.8
+	hide_window = yes
+
+	trigger = {
+		has_global_flag = almighty_sofe
+		has_global_flag = active_sofe_crisis
+
+		is_country_type = sbtg_stellarborne_empire
+	}
+
+	mean_time_to_happen = {
+		months = 6
+
+		modifier = {
+			factor = 0.7
+
+			has_global_flag = almighty_bunny_jump
+			NOT = { has_global_flag = almighty_bunny_jump_exclude_player }
+		}
+
+		# Rapid expand if player is dead
+		modifier = {
+			factor = 0.2
+			
+			if = {
+				limit = {
+					any_playable_country = {
+						is_ai = no
+					}
+				}
+				always = no
+			} else = {
+				always = yes
+			}
+		}
+	}
+
+	immediate = {
+		every_system = {
+			limit = {
+				OR = {
+					has_star_flag = outercluster_gate
+					has_star_flag = outercluster
+				}
+			}
+			star = {
+				create_almighty_citadel = yes
+			}
+		}
+
+		every_system_within_border = {
+			while = {
+				count = 4
+				every_neighbor_system = {
+					create_almighty_citadel = yes
+				}
+			}
+		}
+	}
+}
+
+# Heavy Fleet Flag
+country_event = {
+	id = anz_almighty.9
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = { NAND = {
+				has_global_flag = anz_almighty_heavy_fleets_only
+				has_global_flag = anz_almighty_honorguard_fleets_only
+			} }
+			every_owned_fleet = {
+				limit = {
+					has_fleet_flag = anz_almighty_scouts
+				}
+				destroy_fleet = this
+			}
+			every_system = {
+				limit = {
+					has_star_flag = outercluster_gate
+					any_system_megastructure = {
+						is_megastructure_type = sofe_outer_gate
+					}
+				}
+				while = {
+					count = 10
+					create_almighty_heavy = yes
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = anz_almighty.15 days = 0 }
+			}
+			set_global_flag = anz_almighty_heavy_fleets_only
+		}
+	}
+}
+
+# Anti Blokkat AI
+country_event = {
+	id = anz_almighty.10
+	hide_window = yes
+
+	trigger = {
+		has_global_flag = active_sofe_crisis
+		has_global_flag = blokkat_crisis_ongoing
+		has_global_flag = almighty_sofe
+		is_country_type = sbtg_stellarborne_empire
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		random_system_within_border = {
+			while = {
+				count = 5
+				create_almighty_blokkats = yes
+			}
+		}
+
+		set_global_flag = blokkat_mothership_shield_down
+		every_system = {
+			limit = { has_modifier = blokkat_mothership_shield }
+			remove_modifier = blokkat_mothership_shield
+		}
+
+		every_owned_fleet = {
+			limit = {
+				has_fleet_flag = anz_almighty_blokkat
+			}
+			set_location = {
+				target = event_target:current_blokkat_mothership_system
+				distance = 5
+    	        angle = random
+	            direction = in_system
+			}
+			clear_orders = yes
+	        clear_fleet_actions = this
+		}
+
+		country_event = { id = anz_almighty.11 days = 40 }
+	}
+}
+
+# Self-Destruct after timer and Reactivate Shield for them
+country_event = {
+	id = anz_almighty.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = blokkat_mothership_shield_down
+		every_owned_fleet = {
+			limit = {
+				has_fleet_flag = anz_almighty_blokkat
+			}
+			destroy_fleet = this
+		}
+	}
+}
+
+# RNG Vester Encounter
+country_event = {
+	id = anz_almighty.12
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = active_sofe_crisis
+		has_global_flag = blokkat_crisis_ongoing
+		has_global_flag = almighty_sofe
+		is_country_type = sbtg_stellarborne_empire
+		from = { is_country_type = blokkat_stripminers }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				from = {
+					from = {
+						solar_system = {
+							NOT = { is_same_value = event_target:current_blokkat_mothership_system }
+						}
+					}
+				}
+			}
+			break = yes
+		}
+		set_global_flag = blokkat_mothership_shield_down
+		every_system = {
+			limit = { has_modifier = blokkat_mothership_shield }
+			remove_modifier = blokkat_mothership_shield
+		}
+
+		country_event = { id = anz_almighty.11 days = 30 }
+	}
+}
+
+# Honorguard Fleet Flag
+country_event = {
+	id = anz_almighty.13
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
+			}
+			every_owned_fleet = {
+				limit = {
+					has_fleet_flag = anz_almighty_scouts
+				}
+				destroy_fleet = this
+			}
+			every_owned_fleet = {
+				limit = {
+					has_fleet_flag = anz_almighty_heavy
+				}
+				destroy_fleet = this
+			}
+			every_system = {
+				limit = {
+					has_star_flag = outercluster_gate
+					any_system_megastructure = {
+						is_megastructure_type = sofe_outer_gate
+					}
+				}
+				while = {
+					count = 10
+					create_almighty_honorguard = yes
+				}
+			}
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				country_event = { id = anz_almighty.15 days = 0 }
+			}
+			set_global_flag = anz_almighty_honorguard_fleets_only
+			remove_global_flag = anz_almighty_heavy_fleets_only
+		}
+	}
+}
+
+# Auto Escalation based on kills
+country_event = {
+	id = anz_almighty.14
+	hide_window = yes
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		has_global_flag = active_sofe_crisis
+		has_global_flag = almighty_sofe
+		is_country_type = sbtg_stellarborne_empire
+		NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_global_flag = anz_almighty_heavy_fleets_only
+				NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
+			}
+			if = {
+				limit = { check_variable = {
+					which = origin_fleet_kills
+					value > 80
+				} }
+				country_event = { id = anz_almighty.13 days = 0 } # Honorguard
+			}
+		} else_if = {
+			limit = {
+				NOR = {
+					has_global_flag = anz_almighty_heavy_fleets_only
+					has_global_flag = anz_almighty_honorguard_fleets_only
+				}
+			}
+			if = {
+				limit = { check_variable = {
+					which = origin_fleet_kills
+					value > 40
+				} }
+				country_event = { id = anz_almighty.9 days = 0 } # Heavy
+			}
+		}
+	}
+}
+
+# Notify about Escalation
+country_event = {
+	id = anz_almighty.15
+	is_triggered_only = yes
+
+	title = anz_almighty.15.title
+	desc = anz_almighty.15.desc
+	picture = GFX_evt_sofe_menu_difficulty
+
+	option = {
+		name = anz_almighty.15.a
+	}
+}
+
+# Apply NANI Modifier to newborn countries
+country_event = {
+	id = anz_almighty.16
+	hide_window = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		NOT = { is_country_type = sbtg_stellarborne_empire }
+		has_global_flag = almighty_sofe
+		has_global_flag = almighty_nani
+		NOT = {
+			has_modifier = anz_almighty_nerfed
+		}
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = anz_almighty_nerfed
+			months = 12
+		}
+	}
+}
+
+# NANI
+country_event = {
+	id = anz_almighty.17
+	is_triggered_only = yes
+
+	title = anz_almighty.17.title
+	desc = anz_almighty.17.desc
+	picture = GFX_evt_sofe_menu_difficulty
+
+	option = {
+		name = anz_almighty.17.a
+	}
+}
+
+# Bunny Jump
+country_event = {
+	id = sanz_almighty.18
+	is_triggered_only = yes
+
+	title = sanz_almighty.18.title
+	desc = sanz_almighty.18.desc
+	picture = GFX_evt_sofe_menu_difficulty
+
+	option = {
+		name = sanz_almighty.18.a
+	}
+}

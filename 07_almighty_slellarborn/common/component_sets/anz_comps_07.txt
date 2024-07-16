@@ -1,5 +1,5 @@
 component_set = {
-	key = "ACOT_FLAGSHIP_RADEXP"
+	key = "ANZ_ALMIGHTY_RADEXP"
 	
 	icon = "GFX_ship_part_acot_flagship_radientexplosions"
 	icon_frame = 1	
