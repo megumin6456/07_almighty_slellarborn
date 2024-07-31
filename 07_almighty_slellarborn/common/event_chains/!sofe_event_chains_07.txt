@@ -12,7 +12,7 @@ origin_crisis_chain = {
 		}
 		origin_victims = {
 		}
-		almighty_sofe_arkship_lives = {
+		anz_almighty_arkship_lives = {
 		}
 	}
 }

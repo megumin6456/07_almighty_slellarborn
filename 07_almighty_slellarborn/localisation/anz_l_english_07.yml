@@ -10,37 +10,36 @@ anz_almighty_nerfed: "§Y:3§!"
 anz_almighty_nerfed_desc: "Naaaaaniiii???"
 anz_almighty_buffed: "§Y^^§!"
 anz_almighty_buffed_desc: "§YOH MY STARS§!"
-sofe_arkship_buff: "§MAXIMUM POWERRRR§!"
-sofe_arkship_buff_desc: "§YJNGTEHOIJHDSIUHSDAOFSUHUJ§!"
+anz_almighty_arkship_buff: "§MAXIMUM POWERRRR§!"
+anz_almighty_arkship_buff_desc: "§YJNGTEHOIJHDSIUHSDAOFSUHUJ§!"
 mod_damage_vs_country_type_sbtg_stellarborne_empire_mult: "Damage vs Stellarborne"
-almighty_sofe_arkship_lives: "Arkship Lives (only for Almighty difficulty)"
+anz_almighty_arkship_lives: "Arkship Lives (only for Almighty difficulty)"
 
 # Toasts
 TOAST_ALMIGHTY_MASS_RECALL_TITLE: "§RWARNING:§! MASS RECALL!"
 TOAST_ALMIGHTY_MASS_RECALL_DESC: "Whenever Arkship takes damage, all Stellarborn ships gets recalled."
 
 TOAST_ALMIGHTY_COUNTERATTACK_TITLE: "§RWARNING:§! COUNTER ATTACK!"
-TOAST_ALMIGHTY_COUNTERATTACK_DESC: "Outsider have entered the Outercluster, Stellarborn counterattack every 30 days."
+TOAST_ALMIGHTY_COUNTERATTACK_DESC: "Outsiders have entered the Outercluster, Stellarborn counterattack every 30 days."
 
 TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_TITLE: "§BCOOLDOWN:§! Counter attack."
-TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_DESC: "Stellarborn counter attack entered cooldown for 480 days."
+TOAST_ALMIGHTY_COUNTERATTACK_COOLDOWN_DESC: "Stellarborn counter attack entered cooldown for 200 days."
 
 # Weapon Names
 ANZ_ALMIGHTY_RADEXP: "§YRADIANT  EXPLOSIONS§!"
 ANZ_ALMIGHTY_RADEXP_DESC: "§YGot a problem in life? Just blow it up! Sure it won't solve anything but sure will ERASE it. That's why I always carry a friendly pet NUKE with me!§!"
 
 # Ship Sections
-ALMIGHTY_FLOWING_ESCORT_BOW_KEY: "Wishing Star"
-ALMIGHTY_FLOWING_ESCORT_MID_KEY: "Fledgling Starlings"
-ALMIGHTY_FLOWING_BATTLECRUISER_BOW_KEY: "Solarian Hypercore"
-ALMIGHTY_FLOWING_BATTLECRUISER_MID_KEY: "Lightforged Eversword"
-ALMIGHTY_FLOWING_TITAN_BOW_KEY: "Luminous Nucleus"
-ALMIGHTY_FLOWING_TITAN_MID_KEY: "Trismegistus Starbender"
-ALMIGHTY_FLOWING_HERC_CORE_KEY: "15 Sentinels"
-ALMIGHTY_FLOWING_CITIDEL_KEY: "Blaze Luminous"
-ALMIGHTY_FLOWING_TOWER_KEY: "FLEIJA Launcher"
-ALMIGHTY_FLOWING_GAIA: "Heaven's Strike"
-ALMIGHTY_FLOWING_QUASAR: "Lore Accurate Anti-Cheat"
+ALMIGHTY_FLOWING_ESCORT_BOW_KEY: "§YWishing Star§!"
+ALMIGHTY_FLOWING_ESCORT_MID_KEY: "§YFledgling Starlings§!"
+ALMIGHTY_FLOWING_BATTLECRUISER_BOW_KEY: "§YSolarian Hypercore§!"
+ALMIGHTY_FLOWING_BATTLECRUISER_MID_KEY: "§YLightforged Eversword§!"
+ALMIGHTY_FLOWING_TITAN_BOW_KEY: "§YLuminous Nucleus§!"
+ALMIGHTY_FLOWING_TITAN_MID_KEY: "§YTrismegistus Starbender§!"
+# ALMIGHTY_FLOWING_HERC_CORE_KEY: "15 Sentinels"
+ALMIGHTY_FLOWING_CITIDEL_KEY: "§YBlaze Luminous§!"
+ALMIGHTY_FLOWING_TOWER_KEY: "§YFLEIJA Launcher§!"
+ALMIGHTY_FLOWING_FLAGSHIP_KEY: "§YHeaven's Strike§!"
 
 # Ship Names
 ANZ_ALMIGHTY_ESCORT: "Coastal Wayfinders"
@@ -50,7 +49,6 @@ ANZ_ALMIGHTY_HERCS: "Memories of Suriya"
 ANZ_ALMIGHTY_CITIDEL: "Blaze Luminous"
 ANZ_ALMIGHTY_TOWER: "FLEIJA Launcher"
 ANZ_ALMIGHTY_GAIA: "Arkship Ultimate Kars"
-ANZ_ALMIGHTY_QUASAR: "Inevitable Destiny"
 
 # Fleet Names
 ANZ_ALMIGHTY_SCOUTS: "Lightbound Navigators"
@@ -60,7 +58,6 @@ ANZ_ALMIGHTY_GARRISON: "Anzion Void Masters"
 ANZ_ALMIGHTY_GARRISON_OUTSIDE: "Vigilant Nightwatch"
 ANZ_ALMIGHTY_BLOKKATS: "Menla Blokkat Hunters"
 ANZ_ALMIGHTY_ARKSHIP: "Everlasting Glory"
-ANZ_ALMIGHTY_QUASARCRAFT: "Judgement: Death Sentence"
 
 # Megumin
 ANZ_ALMIGHTY_MEGUMIN: "Ascended Megumin"
@@ -85,7 +82,7 @@ ANZ_ALMIGHTY_STELLARBORNE: "ALMIGHTY STELLARBORNE"
 
 sofe_crisis.15.1.desc.almighty: "Sapient beings of this galaxy, pay attention for the §YStellarborn§! is here! We are the §YFirst Born of the Stars§!, representing the §YOrder of Light§!. Prepare thy worst for we shall show no quarter,\n\n§YAUS: JAWHOL§!"
 
-sofe_crisis.15.1.desc.almighty.oe: "So um... this might be a bit challenging for you too, better have preped up for this bro or you will die too lol"
+sofe_crisis.15.1.desc.almighty.oe: "So um... this might be a bit challenging for you too, better have preped up for this bro or you will die too lol."
 
 sofe_crisis.15.almighty: "§HMAY THE BATTLE COMMENCE§!"
 

@@ -19,7 +19,7 @@ anz_almighty_autarch = {
 	}
 	
 	potential = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = active_sofe_crisis
 		is_country_type = sbtg_stellarborne_empire
 	}

@@ -1,5 +1,7 @@
 namespace = anz_almighty
 
+# Stratetgic AI & Any custom almighty unique stuff
+
 # Arkship Lives Almighty
 ship_event = {
 	id = anz_almighty.2
@@ -8,7 +10,7 @@ ship_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		is_ship_size = sofe_ancient_weapon
 	}
 
@@ -32,7 +34,7 @@ ship_event = {
 				}
 				add_event_chain_counter = {
 					event_chain = "origin_crisis_chain"
-					counter = almighty_sofe_arkship_lives
+					counter = anz_almighty_arkship_lives
 					amount = -1
 				}
 			}
@@ -85,7 +87,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = active_sofe_crisis
 
 		is_same_empire = event_target:sofe_crisis_country
@@ -116,7 +118,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = active_sofe_crisis
 		has_global_flag = almighty_bunny_jump
 
@@ -203,7 +205,7 @@ country_event = {
 	}
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		OR = {
 			has_global_flag = active_sofe_crisis
 			is_country_type = sbtg_stellarborne_empire
@@ -235,7 +237,7 @@ country_event = {
 	hide_window = yes
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = active_sofe_crisis
 
 		is_country_type = sbtg_stellarborne_empire
@@ -258,7 +260,7 @@ country_event = {
 	hide_window = yes
 
 	trigger = {
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = active_sofe_crisis
 
 		is_country_type = sbtg_stellarborne_empire
@@ -365,7 +367,7 @@ country_event = {
 	trigger = {
 		has_global_flag = active_sofe_crisis
 		has_global_flag = blokkat_crisis_ongoing
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		is_country_type = sbtg_stellarborne_empire
 	}
 
@@ -432,7 +434,7 @@ country_event = {
 	trigger = {
 		has_global_flag = active_sofe_crisis
 		has_global_flag = blokkat_crisis_ongoing
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		is_country_type = sbtg_stellarborne_empire
 		from = { is_country_type = blokkat_stripminers }
 	}
@@ -518,7 +520,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = active_sofe_crisis
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		is_country_type = sbtg_stellarborne_empire
 		NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
 	}
@@ -579,7 +581,7 @@ country_event = {
 
 	trigger = {
 		NOT = { is_country_type = sbtg_stellarborne_empire }
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 		has_global_flag = almighty_nani
 		NOT = {
 			has_modifier = anz_almighty_nerfed

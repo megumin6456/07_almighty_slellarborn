@@ -40,7 +40,7 @@ create_origin_homeworld_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -48,7 +48,7 @@ create_origin_homeworld_ships = {
 			NOR = {
 				has_global_flag = hard_sofe
 				has_global_flag = terrible_sofe		
-				has_global_flag = almighty_sofe		
+				has_global_flag = anz_almighty		
 			}
 		}
 		while = {
@@ -120,7 +120,7 @@ create_origin_garrison_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -128,7 +128,7 @@ create_origin_garrison_ships = {
 			NOR = {
 				has_global_flag = hard_sofe
 				has_global_flag = terrible_sofe
-				has_global_flag = almighty_sofe			
+				has_global_flag = anz_almighty			
 			}
 		}
 		while = {
@@ -196,7 +196,7 @@ create_origin_large_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -275,7 +275,7 @@ create_origin_small_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -358,7 +358,7 @@ create_origin_outsider_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -366,7 +366,7 @@ create_origin_outsider_ships = {
 			NOR = {
 				has_global_flag = hard_sofe
 				has_global_flag = terrible_sofe
-				has_global_flag = almighty_sofe	
+				has_global_flag = anz_almighty	
 			}
 		}
 		while = {
@@ -441,7 +441,7 @@ create_origin_scout_ships = {
 	}
 	if = {
 		limit = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 	else_if = {
@@ -449,7 +449,7 @@ create_origin_scout_ships = {
 			NOR = {
 				has_global_flag = hard_sofe
 				has_global_flag = terrible_sofe		
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		while = {
@@ -472,7 +472,7 @@ create_origin_scout_ships = {
 # HERCS
 create_almighty_hercs = {
 	if = {
-		limit = { has_global_flag = almighty_sofe }
+		limit = { has_global_flag = anz_almighty }
 		create_fleet = {
 			name = "ANZ_ALMIGHTY_HERCS"
 			settings = {
@@ -993,7 +993,7 @@ create_almighty_garrison = {
 			set_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
 			acemod_set_fleet_piloted_exclusion_on = yes
 			while = {
-				count = 14
+				count = 20
 				create_ship = {
 					name = random
 					design = "ANZ_ALMIGHTY_TITAN"
@@ -1030,7 +1030,7 @@ create_almighty_garrison_outside = {
 			set_fleet_flag = acemod_fleet_flag_starbase_defensive_protocol
 			acemod_set_fleet_piloted_exclusion_on = yes
 			while = {
-				count = 20
+				count = 40
 				create_ship = {
 					name = random
 					design = "ANZ_ALMIGHTY_BATTLECRUISER"

@@ -1,5 +1,8 @@
 namespace = sofe_crisis
 
+# Diplomacy screen
+# Overwrites marked under almighty exclusive section
+
 # Origin Introduction
 country_event = {
 	id = sofe_crisis.24
@@ -10,7 +13,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		text = sofe_crisis.15.1.desc
@@ -18,7 +21,7 @@ country_event = {
 	desc = {
 		trigger = {
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = sofe_crisis.15.1.desc.fallen
 	}
@@ -27,28 +30,28 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = sofe_crisis.15.1.desc.eternal
 	}
 	desc = {
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = sofe_crisis.15.1.desc.oe
 	}
 	desc = {
 		trigger = {
 			is_progenitor_empires = no
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.15.1.desc.almighty
 	}
 	desc = {
 		trigger = {
 			is_progenitor_empires = yes
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.15.1.desc.almighty.oe
 	}
@@ -68,7 +71,7 @@ country_event = {
 	option = {
 		name = sofe_crisis.15.almighty
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 	}
 
@@ -79,7 +82,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}			
 		}
 		response_text = sofe_crisis.15.a.response
@@ -92,7 +95,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}			
 		}
 		response_text = sofe_crisis.15.b.response
@@ -105,7 +108,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}			
 		}
 		response_text = sofe_crisis.15.c.response
@@ -118,7 +121,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}			
 		}
 		response_text = sofe_crisis.15.d.response
@@ -131,7 +134,7 @@ country_event = {
 				is_fallen_empire = yes
 				is_country_type = eternal_empire
 				is_country_type = sbtg_stellarborne_empire_active
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}			
 		}
 		default_hide_option = yes
@@ -141,7 +144,7 @@ country_event = {
 		name = sofe_crisis.15.fallen.a
 		trigger = {
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.fallen.a.response
 		is_dialog_only = yes
@@ -150,7 +153,7 @@ country_event = {
 		name = sofe_crisis.15.fallen.b
 		trigger = {
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.fallen.b.response
 		is_dialog_only = yes
@@ -159,7 +162,7 @@ country_event = {
 		name = sofe_crisis.15.fallen.c
 		trigger = {
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.fallen.c.response
 		is_dialog_only = yes
@@ -169,7 +172,7 @@ country_event = {
 		response_text = sofe_crisis.15.fallen.d.response
 		trigger = {
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		default_hide_option = yes
 	}
@@ -180,7 +183,7 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.eternal.a.response
 		is_dialog_only = yes
@@ -191,7 +194,7 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.eternal.b.response
 		is_dialog_only = yes
@@ -202,7 +205,7 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		response_text = sofe_crisis.15.eternal.c.response
 		is_dialog_only = yes
@@ -213,7 +216,7 @@ country_event = {
 			OR = {
 				is_country_type = eternal_empire
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		default_hide_option = yes
 	}
@@ -224,7 +227,7 @@ country_event = {
 		is_dialog_only = yes
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 	}
 
@@ -234,7 +237,7 @@ country_event = {
 		is_dialog_only = yes
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 	}
 
@@ -244,7 +247,7 @@ country_event = {
 		is_dialog_only = yes
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 	}
 
@@ -253,7 +256,7 @@ country_event = {
 		response_text = sofe_crisis.15.oe.d.response
 		trigger = {
 			is_progenitor_empires = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		default_hide_option = yes
 	}
@@ -281,7 +284,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		text = "sofe_crisis.550.a.desc"
@@ -300,7 +303,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			} 
 		}
 		text = "sofe_crisis.550.b.desc"
@@ -319,7 +322,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			} 
 		}
 		text = "sofe_crisis.550.c.desc"
@@ -338,7 +341,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			} 
 		}
 		text = "sofe_crisis.550.d.desc"
@@ -357,7 +360,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			} 
 		}
 		text = "sofe_crisis.550.e.desc"
@@ -376,7 +379,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			} 
 		}
 		text = "sofe_crisis.550.f.desc"
@@ -384,49 +387,49 @@ country_event = {
 	desc = {
 		trigger = {
 			any_agreement = { agreement_preset = sbtg_preset_timeout }
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.j.desc"
 	}
 	desc = {
 		trigger = {
 			any_agreement = { agreement_preset = sbtg_preset_timeout }
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.k.desc"
 	}
 	desc = {
 		trigger = {
 			any_agreement = { agreement_preset = sbtg_preset_timeout }
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.m.desc"
 	}
 	desc = {
 		trigger = {
 			any_agreement = { agreement_preset = sbtg_preset_timeout }
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.p.desc"
 	}
 	desc = {
 		trigger = { 
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.fallen.a.desc"
 	}
 	desc = {
 		trigger = { 
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.fallen.b.desc"
 	}
 	desc = {
 		trigger = { 
 			is_fallen_empire = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.fallen.c.desc"
 	}
@@ -434,7 +437,7 @@ country_event = {
 		trigger = { 
 			has_modifier = againstoe
 			is_country_type = eternal_empire
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.a.desc"
 	}
@@ -442,7 +445,7 @@ country_event = {
 		trigger = { 
 			has_modifier = againstoe
 			is_country_type = eternal_empire
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.b.desc"
 	}
@@ -450,7 +453,7 @@ country_event = {
 		trigger = { 
 			has_modifier = againstoe
 			is_country_type = eternal_empire 
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.c.desc"
 	}
@@ -458,7 +461,7 @@ country_event = {
 		trigger = { 
 			has_modifier = withoe
 			is_country_type = eternal_empire 
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.d.desc"
 	}
@@ -466,7 +469,7 @@ country_event = {
 		trigger = { 
 			has_modifier = withoe
 			is_country_type = eternal_empire 
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.e.desc"
 	}
@@ -474,70 +477,70 @@ country_event = {
 		trigger = { 
 			has_modifier = withoe
 			is_country_type = eternal_empire 
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.eternal.f.desc"
 	}
 	desc = {
 		trigger = {
 			has_country_flag = rebelling_protectorate
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.r.desc"
 	}
 	desc = {
 		trigger = {
 			has_country_flag = rebelling_protectorate
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.s.desc"
 	}
 	desc = {
 		trigger = {
 			has_country_flag = rebelling_protectorate
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.t.desc"
 	}
 	desc = {
 		trigger = {
 			has_country_flag = rebelling_protectorate
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.u.desc"
 	}
 	desc = {
 		trigger = {
 			is_homicidal = yes
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.v.desc"
 	}
 	desc = {
 		trigger = {
 				has_valid_civic = "civic_machine_servitor"
-				NOT = { has_global_flag = almighty_sofe }
+				NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.servitor.desc"
 	}
 	desc = {
 		trigger = {
 				has_valid_civic = "civic_fanatic_purifiers"
-				NOT = { has_global_flag = almighty_sofe }
+				NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.purifier.desc"
 	}
 	desc = {
 		trigger = {
 				has_valid_civic = "civic_machine_terminator"
-				NOT = { has_global_flag = almighty_sofe }
+				NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.terminator.desc"
 	}
 	desc = {
 		trigger = {
 				has_valid_civic = "civic_hive_devouring_swarm"
-				NOT = { has_global_flag = almighty_sofe }
+				NOT = { has_global_flag = anz_almighty }
 		}
 		text = "sofe_crisis.550.swarm.desc"
 	}
@@ -546,7 +549,7 @@ country_event = {
 			OR = {
 				is_progenitor_empires = yes
 			}
-			NOT = { has_global_flag = almighty_sofe }
+			NOT = { has_global_flag = anz_almighty }
 		}
 		text = sofe_crisis.550.playoe.a.desc
 	}
@@ -554,69 +557,69 @@ country_event = {
 	# begin almighty exclusive
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.a.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.b.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.c.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.d.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.e.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.f.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.g.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 		}
 		text = sofe_crisis.550.almighty.h.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			has_global_flag = almighty_bunny_jump
 		}
 		text = sofe_crisis.550.almighty.i.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			has_global_flag = almighty_bunny_jump
 		}
 		text = sofe_crisis.550.almighty.j.desc
 	}
 	desc = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			has_global_flag = almighty_bunny_jump
 		}
 		text = sofe_crisis.550.almighty.k.desc
@@ -642,6 +645,18 @@ country_event = {
 
 	immediate = {
 		set_country_flag = original_diplomacy_engaged
+		random_list = {
+			99 = {
+				# none
+			}
+			1 = {
+				# funny
+				set_timed_country_flag = {
+					flag = anz_almighty_secretRoom
+					days = 1
+				}
+			}
+		}
 	}
 
 	after = {
@@ -665,7 +680,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		hidden_effect = {
@@ -713,7 +728,7 @@ country_event = {
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
 				is_fallen_empire = yes
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		response_text = sofe_crisis.550.b.response
@@ -732,7 +747,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 		}
 		response_text = sofe_crisis.550.c.response
@@ -753,7 +768,7 @@ country_event = {
 				has_valid_civic = "civic_hive_devouring_swarm"
 				has_valid_civic = "civic_machine_terminator"
 				has_valid_civic = "civic_machine_servitor"
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 			NOT = {
 				any_country = {
@@ -788,7 +803,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			NOT = { has_country_flag = asked_almighty_surrender }
 		}
 		name = sofe_crisis.15.550.almighty.a
@@ -799,7 +814,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			has_country_flag = asked_almighty_surrender
 			is_ai = no
 		}
@@ -810,7 +825,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			NOR = {
 				has_global_flag = anz_almighty_heavy_fleets_only
 				has_global_flag = anz_almighty_honorguard_fleets_only
@@ -830,7 +845,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			is_ai = no
 			NOT = { has_global_flag = anz_almighty_honorguard_fleets_only }
 		}
@@ -847,7 +862,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			# has_global_flag = anz_almighty_honorguard_fleets_only
 			is_ai = no
 			NOT = { has_global_flag = almighty_nani }
@@ -879,7 +894,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			is_ai = no
 			NOR = {
 				has_global_flag = almighty_bunny_jump
@@ -899,7 +914,7 @@ country_event = {
 
 	option = {
 		trigger = {
-			has_global_flag = almighty_sofe
+			has_global_flag = anz_almighty
 			is_ai = no
 			has_country_flag = asked_almighty_bunny_jump
 			NOT = { has_global_flag = almighty_bunny_jump }
@@ -922,6 +937,16 @@ country_event = {
 				country_event = { id = sanz_almighty.18 days = 0 }
 			}
 		}
+	}
+
+	option = { # does actually nothing
+		trigger = {
+			has_country_flag = anz_almighty_secretRoom
+		}
+		name = sofe_crisis_15.550.almighty.g
+		custom_tooltip = sofe_crisis_15.550.almighty.g.tooltip
+		response_text = sofe_crisis_15.550.almighty.g.response
+		is_dialog_only = yes
 	}
 	# end almighty exclusive
 

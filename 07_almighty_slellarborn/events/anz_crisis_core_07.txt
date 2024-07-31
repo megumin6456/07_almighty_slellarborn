@@ -1,5 +1,7 @@
 namespace = sofe_crisis
 
+# Overwrites for Core functions
+
 # Origin Empire Emerges, time to remove your save
 country_event = {
 	id = sofe_crisis.1
@@ -24,10 +26,10 @@ country_event = {
 				amount = 4
 			}
 			if = {
-				limit = { has_global_flag = almighty_sofe }
+				limit = { has_global_flag = anz_almighty }
 				add_event_chain_counter = {
 					event_chain = "origin_crisis_chain"
-					counter = almighty_sofe_arkship_lives
+					counter = anz_almighty_arkship_lives
 					amount = 2500
 				}
 			}
@@ -90,7 +92,7 @@ country_event = {
 			effect = { save_global_event_target_as = oe_caretaker_species }
 		}
 		# Empire Stuff for Almighty vs Normal
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			create_country = {
 				name = "ANZ_ALMIGHTY_STELLARBORNE"
 				type = "sbtg_stellarborne_empire"
@@ -316,7 +318,7 @@ country_event = {
 			# Almighty Hercs (Home Guards)
 			create_almighty_hercs = yes
 			# Arkship Spawn
-			if = { limit = { has_global_flag = almighty_sofe }
+			if = { limit = { has_global_flag = anz_almighty }
 				create_leader = {
 					class = commander
 					species = event_target:origin_species_megumin
@@ -424,7 +426,7 @@ country_event = {
 			}
 		}
 		if = {
-			limit = { has_global_flag = almighty_sofe }
+			limit = { has_global_flag = anz_almighty }
 			every_country = {
 				limit = {
 					NOT = { is_same_empire = event_target:sofe_crisis_country }
@@ -460,7 +462,7 @@ country_event = {
 			random_system_planet = {
 				limit = { has_planet_flag = CapitalFortress }
 				if = {
-					limit = { has_global_flag = almighty_sofe }
+					limit = { has_global_flag = anz_almighty }
 
 					set_planet_entity = {
 						picture = pc_almighty_golden_world
@@ -719,7 +721,7 @@ country_event = {
 				every_system_planet = {
 					limit = { is_planet_class = pc_golden_world }
 					if = {
-						limit = { has_global_flag = almighty_sofe }
+						limit = { has_global_flag = anz_almighty }
 						create_almighty_garrison = yes
 
 						set_planet_entity = {
@@ -864,7 +866,7 @@ country_event = {
 					}
 				}
 				solar_system = {
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						create_almighty_citadel_home = yes
 					} else = {
 						create_original_home_citadel = yes
@@ -884,14 +886,14 @@ country_event = {
 			awaken_caretaker_against_original = yes
 
 			# Heavy Escalation in 4 years
-			if = { limit = { has_global_flag = almighty_sofe }
+			if = { limit = { has_global_flag = anz_almighty }
 				event_target:sofe_crisis_country = {
 					country_event = { id = anz_almighty.9 days = 1440 }
 				}
 			}
 
 			# Honorguard Escalation in 8 years
-			if = { limit = { has_global_flag = almighty_sofe }
+			if = { limit = { has_global_flag = anz_almighty }
 				event_target:sofe_crisis_country = {
 					country_event = { id = anz_almighty.13 days = 2880 }
 				}
@@ -917,7 +919,7 @@ country_event = {
 						is_sbtg_outer_gate = yes
 					}
 					# Almighty Garrison Redirect
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						create_almighty_garrison = yes
 					} else = {
 						create_fleet = {
@@ -995,7 +997,7 @@ country_event = {
 						}
 					}
 					# Almighty Citidel
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						create_almighty_citadel = yes
 					} else = {
 						create_original_citadel = yes
@@ -1006,7 +1008,7 @@ country_event = {
 						is_sbtg_outer_gate = yes
 					}
 					# Almight Garrison Outside
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						create_almighty_garrison_outside = yes
 					} else = {
 						create_fleet = {
@@ -1056,7 +1058,7 @@ planet_event = {
 			location = this
 		}
 
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
 		} else = {
 			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
@@ -1081,7 +1083,7 @@ planet_event = {
 			location = this
 		}
 
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
 		} else = {
 			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
@@ -1105,7 +1107,7 @@ planet_event = {
 			location = this
 		}
 
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
 		} else = {
 			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
@@ -1129,7 +1131,7 @@ planet_event = {
 			location = this
 		}
 
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			planet_event = { id = sofe_crisis.1301 } # Instant reinforcement cycle
 		} else = {
 			planet_event = { id = sofe_crisis.1300 } # Start Fleet reinforcement cycle
@@ -1155,7 +1157,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 			remove_all_buildings = yes
 			destroy_colony = yes
@@ -1300,7 +1302,7 @@ country_event = {
 			has_valid_civic = "civic_machine_servitor"
 			has_valid_civic = "civic_machine_assimilator"
 		}
-		NOT = { has_global_flag = almighty_sofe }
+		NOT = { has_global_flag = anz_almighty }
 		OR = {
 			has_federation = no
 			AND = {
@@ -1451,7 +1453,7 @@ planet_event = {
 		if = {
 			limit = {
 				owner = {
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						num_ships > 2500
 					} else = {
 						num_ships > 4000
@@ -1470,7 +1472,7 @@ planet_event = {
 		# If no worhty empires, check agian later
 		if = {
 			limit = { 
-				NOT = { has_global_flag = almighty_sofe }
+				NOT = { has_global_flag = anz_almighty }
 				any_country = {
 					is_playable_country = yes
 					NOT = {
@@ -1483,7 +1485,7 @@ planet_event = {
 		}
 		# BOmbs away
 		else = {
-			if = { limit = { has_global_flag = almighty_sofe }
+			if = { limit = { has_global_flag = anz_almighty }
 				planet_event = { id = sofe_crisis.1301 days = 360 }
 			} else = {
 				planet_event = { id = sofe_crisis.1301 days = 3600 }
@@ -1507,7 +1509,7 @@ planet_event = {
 	
 	immediate = {
 		if = {
-			limit = { has_global_flag = almighty_sofe }
+			limit = { has_global_flag = anz_almighty }
 			if = {
 				limit = { has_global_flag = anz_almighty_honorguard_fleets_only }
 				while = {
@@ -1561,7 +1563,7 @@ planet_event = {
 				}
 			}
 			if = {
-				limit = { has_global_flag = almighty_sofe }
+				limit = { has_global_flag = anz_almighty }
 				every_country = {
 					create_message = {
 						type = TOAST_ALMIGHTY_COUNTERATTACK
@@ -1586,7 +1588,7 @@ planet_event = {
 		}
 		else = {
 			if = {
-				limit = { has_global_flag = almighty_sofe }
+				limit = { has_global_flag = anz_almighty }
 				planet_event = { id = sofe_crisis.1302 days = 30 }
 			} else = {
 				planet_event = { id = sofe_crisis.1302 days = 360 }		# Check Again
@@ -1609,7 +1611,7 @@ planet_event = {
 	immediate = {
 		if = {
 			limit = {
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 			while = {
 				count = 5
@@ -1656,7 +1658,7 @@ planet_event = {
 					clear_fleet_actions = this
 					acemod_set_fleet_piloted_exclusion_off = yes
 				} }
-				planet_event = { id = sofe_crisis.1302 days = 480 }
+				planet_event = { id = sofe_crisis.1302 days = 200 }
 			}
 		} else = {
 			create_origin_heavy_fleet = yes
@@ -1693,7 +1695,7 @@ country_event = {
 					has_global_flag = giga_blokkats_endtech
 					has_global_flag = giga_blokkats_deathmode
 				}
-				has_global_flag = almighty_sofe
+				has_global_flag = anz_almighty
 			}
 			event_target:sofe_crisis_country = {
 				country_event = { id = anz_almighty.13 days = 0 }
@@ -1703,9 +1705,9 @@ country_event = {
 			limit = {
 				NOR = {
 					has_star_flag = outercluster_gate
-					if = { limit = { has_global_flag = almighty_sofe }
+					if = { limit = { has_global_flag = anz_almighty }
 						event_target:sofe_crisis_country = {
-							num_ships > 3000
+							num_ships > 2500
 						}
 					} else = {
 						event_target:sofe_crisis_country = {
@@ -1716,8 +1718,9 @@ country_event = {
 				any_system_megastructure = { 
 					is_sbtg_outer_gate = yes
 				}
-				if = { limit = { has_global_flag = almighty_sofe }
+				if = { limit = { has_global_flag = anz_almighty }
 					# Ignore Ownership if Almighty and spawn anyways
+					always = yes
 				} else = {
 					is_owned_by = event_target:sofe_crisis_country
 				}
@@ -1728,8 +1731,9 @@ country_event = {
 				}
 				if = { # Almighty Redirect
 					limit = {
-						has_global_flag = almighty_sofe
+						has_global_flag = anz_almighty
 					}
+					# handled in another place
 				} else = {
 					create_fleet = {
 						name = "NAME_Origin_Fleet_Scout"
@@ -1777,8 +1781,8 @@ country_event = {
 			country_event = { id = sofe_crisis.1400 }
 			country_event = { id = sofe_crisis.1400 days = 180 }
 		}
-		if = {
-			limit = { has_global_flag = almighty_sofe }
+		if = { # lower cooldown for almighty
+			limit = { has_global_flag = anz_almighty }
 			country_event = { id = sofe_crisis.14 days = 300 }
 		} else = {
 			country_event = { id = sofe_crisis.14 days = 1080 }
@@ -1821,7 +1825,7 @@ country_event = {
 	}
 	
 	immediate = {
-		if = { limit = { has_global_flag = almighty_sofe }
+		if = { limit = { has_global_flag = anz_almighty }
 			if = { limit = { has_technology = tech_dark_matter_power_core_oe }
 				if = { limit = { fromfromfrom = { is_ship_size = precursor_escort } }
 					add_resource = { acot_sr_light_matter = 1000 }

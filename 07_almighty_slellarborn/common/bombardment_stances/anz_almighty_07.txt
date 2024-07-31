@@ -1,7 +1,7 @@
 hypernova = {
 	trigger = {
 		owner = { is_country_type = sbtg_stellarborne_empire }
-		has_global_flag = almighty_sofe
+		has_global_flag = anz_almighty
 	}
 	default = no
 	

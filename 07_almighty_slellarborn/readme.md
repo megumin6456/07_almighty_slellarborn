@@ -3,4 +3,4 @@
 Required Mods: ACOT & SBTG & ACE MOD
 
 Mod will only activate if Almighty Difficulty is selected
-has_global_flag = almighty_sofe
+has_global_flag = anz_almighty
