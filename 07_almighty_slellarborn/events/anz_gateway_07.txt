@@ -1,0 +1,74 @@
+namespace = anz_almighty
+
+# Summon at 2500
+country_event = {
+	id = anz_almighty.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_global_flag = active_sofe_crisis
+			has_global_flag = outer_cluster_opened
+		}
+		has_global_flag = sofe_shield_weaken
+		has_global_flag = anz_almighty
+		years_passed > 300
+	}
+
+	immediate = {
+		set_country_flag = outercluster_opener
+		set_global_flag = sofe_oe_crisis_imminent
+		set_global_flag = outer_cluster_opened
+		every_megastructure = {
+			limit = {
+				is_sbtg_outer_gate = yes
+			}
+			activate_gateway = this
+		}
+		every_ambient_object = {
+			limit = {
+				has_ambient_object_flag = sofe_shield_full
+			}
+			destroy_ambient_object = this
+		}
+		every_ambient_object = {
+			limit = {
+				has_ambient_object_flag = sofe_shield_partial
+			}
+			destroy_ambient_object = this
+		}
+		every_playable_country = {
+			country_event = { id = sofe_gateway.202 }
+		}
+		##### REMOVE PHANON THEY GO BYE BYE - Need Actual Rewrite Later
+		set_global_flag = acot_phanon_forbidden
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = acot_phanon_base
+					is_country_type = acot_phanon_retaliator
+					is_same_value = event_target:phanon_base_country
+				}
+			}
+			every_owned_fleet = {
+				destroy_fleet = this
+			}
+			destroy_country = yes
+		}
+		every_system = {
+			limit = {
+				has_star_flag = phanon_home_base
+			}
+			every_system_planet = {
+				limit = {
+					is_star = no
+				}
+				remove_planet = yes
+			}
+			every_system_megastructure = {
+				delete_megastructure = this
+			}
+		}
+	}
+}

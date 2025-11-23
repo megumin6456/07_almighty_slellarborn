@@ -1,0 +1,20 @@
+PROGENITOR = {
+	archetype = DEITY
+	randomized = no
+	use_climate_preference = no
+
+	portraits = {
+		"progenitors"
+	}
+
+	custom_portraits = {
+		randomized = { always = no }
+		playable = { always = no }
+		portraits = {
+			anz_megumin_oe
+		}
+	}
+	
+	graphical_culture = original_empire
+	move_pop_sound_effect = "moving_pop_confirmation"
+}

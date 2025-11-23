@@ -1,0 +1,2414 @@
+# Flowing Escort
+ship_design = {
+	name = "ANZ_ALMIGHTY_ESCORT"
+	ship_size = precursor_escort
+
+	section = {
+		template = "ALMIGHTY_FLOWING_ESCORT_BOW_KEY"
+		slot = "bow"
+		
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_06"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_07"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_08"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_09"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_10"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_ESCORT_MID_KEY"
+		slot = "mid"
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_ESCORT_MID_KEY"
+		slot = "stern"
+		component = {
+			slot = "LARGE_GUN_01"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_02"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_03"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_04"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "LARGE_GUN_05"
+			template = "ACOT_MASS_DRIVER_SUPER_LARGE"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_1"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_2"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_3"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_4"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "MEDIUM_UTILITY_5"
+			template = "MEDIUM_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	required_component = "FLOWING_REACTOR_OE"
+	required_component = "FLOWING_DRIVE_OE"
+	required_component = "FLOWING_THRUSTER_OE"
+	required_component = "FLOWING_SENSOR_OE"
+	required_component = "OE_OFFENSIVE_COMBAT_COMPUTER_FLOWING"
+}
+
+# Flowing Battlecruiser
+ship_design = {
+	name = "ANZ_ALMIGHTY_BATTLECRUISER"
+	ship_size = precursor_battlecruiser
+
+	section = {
+		template = "ALMIGHTY_FLOWING_BATTLECRUISER_BOW_KEY"
+		slot = "bow"
+
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_02"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_03"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_04"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_05"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_06"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_07"
+			template = "ACOT_LANCE_SUPER"
+		}
+		
+		component = {
+			slot = "EXTRA_LARGE_08"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_09"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_10"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		# component = {
+		# 	slot = "AUX_UTILITY_1"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_2"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_3"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_BATTLECRUISER_MID_KEY"
+		slot = "mid"
+
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_02"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_03"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_04"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_05"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		# component = {
+		# 	slot = "AUX_UTILITY_1"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_2"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_3"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_BATTLECRUISER_MID_KEY"
+		slot = "stern"
+
+		component = {
+			slot = "EXTRA_LARGE_01"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_02"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_03"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_04"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "EXTRA_LARGE_05"
+			template = "ACOT_LANCE_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		# component = {
+		# 	slot = "AUX_UTILITY_1"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_2"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+
+		# component = {
+		# 	slot = "AUX_UTILITY_3"
+		# 	template = "LARGE_ACOT_ARMOR_SUPER"
+		# }
+	}
+
+	required_component = "FLOWING_REACTOR_OE"
+	required_component = "FLOWING_DRIVE_OE"
+	required_component = "FLOWING_THRUSTER_OE"
+	required_component = "FLOWING_SENSOR_OE"
+	required_component = "OE_BALANCE_COMBAT_COMPUTER_FLOWING"
+}
+
+# Flowing Titan
+ship_design = {
+	name = "ANZ_ALMIGHTY_TITAN"
+	ship_size = precursor_titan
+
+	section = {
+		template = "ALMIGHTY_FLOWING_TITAN_BOW_KEY"
+		slot = "spinal"
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_TITAN_MID_KEY"
+		slot = "mid"
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_TITAN_MID_KEY"
+		slot = "core"
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "ALMIGHTY_FLOWING_TITAN_MID_KEY"
+		slot = "stern"
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_ULTIMATE_WEAPON"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	required_component = "FLOWING_REACTOR_OE"
+	required_component = "FLOWING_DRIVE_OE"
+	required_component = "FLOWING_THRUSTER_OE"
+	required_component = "FLOWING_SENSOR_OE"
+	required_component = "OE_DEFENSIVE_COMBAT_COMPUTER_FLOWING"
+	required_component = "ACOT_AURA_SUPERAURA_OE"
+	required_component = "ACOT_AURA_TECH_INHIBITOR_OE"
+}
+
+# Flowing Citidel
+ship_design = {
+	name = "ANZ_ALMIGHTY_CITIDEL"
+	ship_size = origin_super_citadel
+	section = {
+		template = "ALMIGHTY_FLOWING_CITIDEL_KEY"
+		slot = "mid"
+		
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	required_component="FLOWING_REACTOR_OE"
+	required_component="FLOWING_SENSOR_OE"
+	required_component="OE_STARBASE_DEFENSIVE_COMBAT_COMPUTER_FLOWING"
+}
+
+# Flowing Tower
+ship_design = {
+	name = "ANZ_ALMIGHTY_TOWER"
+	ship_size = sofe_ancient_small_military_station
+	hide_size = yes
+	
+	section = {
+		template = "ALMIGHTY_FLOWING_TOWER_KEY"
+		slot = "mid"	
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_MISSILE_NUKE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+	}
+
+	required_component="FLOWING_REACTOR_OE"
+	required_component="FLOWING_SENSOR_OE"
+	required_component="OE_STARBASE_DEFENSIVE_COMBAT_COMPUTER_FLOWING"
+}
+
+# Herculean
+ship_design = {
+	name = "ANZ_ALMIGHTY_HERCS"
+	ship_size = precursor_colossus
+	
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_W_SECTION"
+		slot = "ship"
+		
+		component = {
+			slot = "PLANET_KILLER_GUN_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "HANGER_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "LARGE_ACOT_ARMOR_SUPER"
+		}
+	}
+
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_T_SECTION"
+		slot = "weapon1"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+	}
+
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_T_SECTION"
+		slot = "weapon1"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+	}
+
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_T_SECTION"
+		slot = "weapon1"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+	}
+
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_T_SECTION"
+		slot = "weapon1"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+	}
+
+	section = {
+		template = "OMEGA_PRECURSOR_COLOSSUS_T_SECTION"
+		slot = "weapon1"
+		
+		component = {
+			slot = "TITANIC_01"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_6"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_7"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_8"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_9"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_10"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_11"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_12"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_13"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_14"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_15"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_16"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_17"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_18"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_19"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_20"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_21"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_22"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_23"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_24"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "LARGE_UTILITY_25"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_FLAGSHIP_SUPER_WEAPON"
+		}
+	}
+
+	required_component = "FLOWING_REACTOR_OE"
+	required_component = "FLOWING_DRIVE_OE"
+	required_component = "FLOWING_THRUSTER_OE"
+	required_component = "FLOWING_SENSOR_OE"
+	required_component = "OE_STARBASE_DEFENSIVE_COMBAT_COMPUTER_FLOWING"
+	required_component = "ACOT_AURA_SUPERAURA_OE"
+	required_component = "ACOT_AURA_SUPERAURA_OE"
+	required_component = "ACOT_AURA_SUPERAURA_OE"
+}
+
+# Arkship
+ship_design = {
+	name = "ANZ_ALMIGHTY_GAIA"
+	ship_size = sofe_ancient_weapon
+	hide_size = yes
+	
+	section = {
+		template = "ALMIGHTY_FLOWING_FLAGSHIP_KEY"
+		slot = "mid"	
+
+		component = {
+			slot = "TITANIC_01"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_02"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_03"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_04"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_05"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_06"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_07"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_08"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_09"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_10"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_11"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_12"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_13"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_14"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_15"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_16"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_17"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_18"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_19"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_20"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_21"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_22"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_23"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_24"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_25"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_26"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_27"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_28"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_29"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_30"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_31"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_32"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_33"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_34"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_35"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_36"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_37"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_38"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_39"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_40"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_41"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_42"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_43"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_44"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_45"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_46"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_47"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_48"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_49"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_50"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_51"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_52"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_53"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_54"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_55"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_56"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_57"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_58"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_59"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_60"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_61"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_62"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_63"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_64"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_65"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_66"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_67"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_68"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_69"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_70"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_71"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_72"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_73"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_74"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_75"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_76"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_77"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_78"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_79"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_80"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_81"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_82"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_83"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_84"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_85"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_86"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_87"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_88"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_89"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_90"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_91"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_92"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_93"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_94"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_95"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_96"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_97"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_98"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_99"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_100"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+		component = {
+			slot = "TITANIC_101"
+			template = "ANZ_ALMIGHTY_RADEXP"
+		}
+
+		component = {
+			slot = "AUX_UTILITY_1"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_2"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}	
+		component = {
+			slot = "AUX_UTILITY_3"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}  
+		component = {
+			slot = "AUX_UTILITY_4"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_5"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_6"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_7"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_8"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_9"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_10"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_11"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_12"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}	
+		component = {
+			slot = "AUX_UTILITY_13"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}  
+		component = {
+			slot = "AUX_UTILITY_14"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_15"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_16"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_17"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_18"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_19"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+		component = {
+			slot = "AUX_UTILITY_20"
+			template = "ACOT_WEAPONS_CORE_OE"
+		}
+	}
+	
+	required_component="FLOWING_SENSOR_OE"
+	required_component="FLOWING_DRIVE_OE"
+	required_component="OE_DEFENSIVE_COMBAT_COMPUTER_FLOWING"
+	required_component="FLOWING_REACTOR_OE"
+	required_component="FLOWING_THRUSTER_OE"
+	required_component="ACOT_AURA_TECH_INHIBITOR_OE"
+	required_component="ACOT_AURA_TECH_INHIBITOR_OE"
+	required_component="ACOT_AURA_TECH_INHIBITOR_OE"
+	required_component="ACOT_AURA_TECH_INHIBITOR_OE"
+	required_component="ACOT_AURA_TECH_INHIBITOR_OE"
+}

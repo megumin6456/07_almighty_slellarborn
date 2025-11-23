@@ -1,0 +1,23 @@
+on_ship_disabled = {
+	events = {
+		anz_almighty.2
+	}
+}
+
+on_entering_battle = {
+	events = {
+		anz_almighty.12
+	}
+}
+
+on_yearly_pulse_country = {
+	events = {
+		anz_almighty.1
+	}
+}
+
+on_game_start = {
+	events = {
+		anz_almighty.0
+	}
+}
